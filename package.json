@@ -1,0 +1,39 @@
+{
+  "name": "doctools",
+  "version": "1.0.0",
+  "description": "Doctools for Egg.js",
+  "dependencies": {
+    "common-bin": "^2.3.0"
+  },
+  "devDependencies": {
+    "autod": "^2.8.0",
+    "coffee": "^3.3.0",
+    "egg-bin": "^3.3.2",
+    "egg-ci": "^1.6.0",
+    "eslint": "^3.19.0",
+    "eslint-config-egg": "^3.2.0",
+    "webstorm-disable-index": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "autod": "autod",
+    "lint": "eslint .",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "ci": "npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles"
+  },
+  "ci": {
+    "version": "6, 7",
+    "license": true
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
