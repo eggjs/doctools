@@ -20,7 +20,6 @@
 [download-image]: https://img.shields.io/npm/dm/doctools.svg?style=flat-square
 [download-url]: https://npmjs.org/package/doctools
 
-
 ## Usage
 
 ```bash
