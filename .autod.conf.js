@@ -9,6 +9,7 @@ module.exports = {
   dep: [
   ],
   devdep: [
+    'egg',
     'egg-ci',
     'egg-bin',
     'autod',
@@ -18,5 +19,8 @@ module.exports = {
   ],
   exclude: [
     './test/fixtures',
+  ],
+  semver: [
+    'egg@1.2.1',
   ],
 };

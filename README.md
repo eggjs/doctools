@@ -27,6 +27,8 @@
 npm i egg-doctools --save-dev
 ```
 
+doc server . --dest target
+
 ## License
 
 [MIT](LICENSE)
