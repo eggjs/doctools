@@ -10,6 +10,7 @@ module.exports = {
     'hexo-generator-index',
     'hexo-generator-tag',
     'hexo-renderer-less',
+    'hexo-server',
   ],
   devdep: [
     'egg',
