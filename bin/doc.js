@@ -8,7 +8,7 @@ const Command = require('common-bin');
 class DocTools extends Command {
   constructor(rawArgv) {
     super(rawArgv);
-    this.usage = 'Usage: doc <command> [options]';
+    this.usage = 'Usage: doctools <command> [options]';
     this.load(path.join(__dirname, '../lib/cmd'));
     this.yargs.alias('V', 'version');
   }

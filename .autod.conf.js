@@ -7,6 +7,9 @@ module.exports = {
     'test',
   ],
   dep: [
+    'hexo-generator-index',
+    'hexo-generator-tag',
+    'hexo-renderer-less',
   ],
   devdep: [
     'egg',

@@ -3,16 +3,24 @@
   "version": "1.0.0",
   "description": "Doctools for Egg.js",
   "dependencies": {
-    "common-bin": "^2.3.0"
+    "common-bin": "^2.3.1",
+    "hexo": "^3.3.5",
+    "hexo-generator-index": "^0.2.1",
+    "hexo-generator-tag": "^0.2.0",
+    "hexo-renderer-less": "^0.2.0",
+    "hexo-server": "^0.2.0",
+    "markdown-it": "^8.3.1",
+    "markdown-it-replace-link": "^1.0.1",
+    "markdown-it-toc-and-anchor": "^4.1.2"
   },
   "devDependencies": {
     "autod": "^2.8.0",
-    "coffee": "^3.3.0",
+    "coffee": "^3.3.1",
     "egg": "^1.2.1",
     "egg-bin": "^3.3.2",
     "egg-ci": "^1.6.0",
     "eslint": "^3.19.0",
-    "eslint-config-egg": "^3.2.0",
+    "eslint-config-egg": "^4.1.0",
     "webstorm-disable-index": "^1.1.2"
   },
   "engines": {
