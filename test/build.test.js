@@ -4,7 +4,6 @@ const path = require('path');
 const coffee = require('coffee');
 const bin = path.join(__dirname, '../bin/doctools.js');
 
-
 describe.only('test/build.test.js', () => {
 
   it('should work', function* () {
