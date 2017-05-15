@@ -11,6 +11,7 @@ module.exports = {
     'hexo-generator-tag',
     'hexo-renderer-less',
     'hexo-server',
+    'jsdoc',
   ],
   devdep: [
     'egg',
