@@ -6,6 +6,7 @@
     "common-bin": "^2.3.1",
     "cpy": "^5.0.0",
     "debug": "^2.6.6",
+    "gh-pages": "^1.0.0",
     "hexo": "^3.3.5",
     "hexo-generator-index": "^0.2.1",
     "hexo-generator-tag": "^0.2.0",
@@ -17,7 +18,8 @@
     "markdown-it-toc-and-anchor": "^4.1.2",
     "mz": "^2.6.0",
     "mz-modules": "^1.0.0",
-    "runscript": "^1.2.1"
+    "runscript": "^1.2.1",
+    "taffydb": "^2.7.3"
   },
   "devDependencies": {
     "autod": "^2.8.0",
