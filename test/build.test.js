@@ -6,7 +6,7 @@ const coffee = require('coffee');
 const assert = require('assert');
 const bin = path.join(__dirname, '../bin/doctools.js');
 
-describe.only('test/build.test.js', () => {
+describe('test/build.test.js', () => {
 
   describe('build framework', () => {
     const cwd = path.join(__dirname, 'fixtures/framework');
