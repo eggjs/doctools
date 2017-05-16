@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Doctools for Egg.js",
   "main": "lib/index.js",
+  "bin": {
+    "doctools": "bin/doctools.js"
+  },
   "dependencies": {
     "common-bin": "^2.3.1",
     "cpy": "^5.0.0",
@@ -56,6 +59,7 @@
   "author": "popomore <sakura9515@gmail.com>",
   "license": "MIT",
   "files": [
-    "lib"
+    "lib",
+    "bin"
   ]
 }
