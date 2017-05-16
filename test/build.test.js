@@ -4,6 +4,7 @@ const fs = require('mz/fs');
 const path = require('path');
 const coffee = require('coffee');
 const assert = require('assert');
+const { rimraf } = require('mz-modules');
 const bin = path.join(__dirname, '../bin/doctools.js');
 
 describe('test/build.test.js', () => {
@@ -17,6 +18,7 @@ describe('test/build.test.js', () => {
         .expect('code', 0)
         .end();
     });
+    after(() => rimraf(target));
 
     it('should generate framework version and node version', function* () {
       const content = yield fs.readFile(path.join(target, 'public/index.html'), 'utf8');
@@ -55,6 +57,18 @@ describe('test/build.test.js', () => {
       docPath = path.join(target, 'public/zh-cn/contributing.html');
       content = yield fs.readFile(docPath, 'utf8');
       assert(content.includes('代码贡献规范'));
+    });
+
+    it('should support languages config', function* () {
+      let docPath = path.join(target, 'public/en/intro/index.html');
+      let content = yield fs.readFile(docPath, 'utf8');
+      assert(content.includes('Guide'));
+      assert(content.includes('What is Egg?'));
+
+      docPath = path.join(target, 'public/zh-cn/intro/index.html');
+      content = yield fs.readFile(docPath, 'utf8');
+      assert(content.includes('新手指南'));
+      assert(content.includes('Egg.js 是什么?'));
     });
   });
 
