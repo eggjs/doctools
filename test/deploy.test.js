@@ -12,7 +12,7 @@ describe('test/deploy.test.js', () => {
     const target = path.join(cwd, 'run/doctools');
     before(function* () {
       yield coffee.fork(bin, [ 'deploy' ], { cwd })
-        // .debug()
+        .debug()
         .expect('code', 0)
         .end();
     });
