@@ -54,5 +54,8 @@
     "url": "git@github.com:eggjs/doctools.git"
   },
   "author": "popomore <sakura9515@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "lib"
+  ]
 }
