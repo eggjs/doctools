@@ -1,0 +1,19 @@
+language:
+- zh-cn
+- en
+timezone: UTC
+url: https://eggjs.org
+root: /
+archive_dir: news
+highlight:
+  enable: true
+  line_number: false
+per_page: 0
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: egg
+
+less:
+  compress: true
