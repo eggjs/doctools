@@ -2,14 +2,14 @@
 
 const path = require('path');
 const coffee = require('coffee');
-const docBin = path.join(__dirname, '../../bin/doc.js');
+const docBin = path.join(__dirname, '../../bin/doctools.js');
 
 describe('test/bin/doc.test.js', () => {
 
   it('should show help', function* () {
     yield coffee.fork(docBin, [ '-h' ])
       // .debug()
-      .expect('stdout', /Usage: doc <command> \[options]/)
+      .expect('stdout', /Usage: doctools <command> \[options]/)
       .expect('stdout', /build *Build document/)
       .expect('stdout', /deploy *Build and deploy document/)
       .expect('stdout', /server *Start a server for local development/)

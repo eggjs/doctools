@@ -7,7 +7,7 @@ const request = require('supertest');
 const bin = path.join(__dirname, '../bin/doctools.js');
 
 
-describe.only('test/server.test.js', () => {
+describe('test/server.test.js', () => {
 
   describe('launsh server', () => {
     const url = 'http://localhost:4000';
@@ -21,7 +21,7 @@ describe.only('test/server.test.js', () => {
         .end();
 
       // wait server listen
-      yield sleep(10000);
+      yield sleep(30000);
       proc = c.proc;
     });
     after(() => {
