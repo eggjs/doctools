@@ -13,7 +13,7 @@ describe('test/build.test.js', () => {
     const target = path.join(cwd, 'run/doctools');
     before(function* () {
       yield coffee.fork(bin, [ 'build' ], { cwd })
-        .debug()
+        // .debug()
         .expect('code', 0)
         .end();
     });
@@ -45,6 +45,16 @@ describe('test/build.test.js', () => {
       docPath = path.join(target, 'public/zh-cn/intro/index.html');
       content = yield fs.readFile(docPath, 'utf8');
       assert(content.includes('中文文档'));
+    });
+
+    it('should copy contributing', function* () {
+      let docPath = path.join(target, 'public/en/contributing.html');
+      let content = yield fs.readFile(docPath, 'utf8');
+      assert(content.includes('Contribution Guide'));
+
+      docPath = path.join(target, 'public/zh-cn/contributing.html');
+      content = yield fs.readFile(docPath, 'utf8');
+      assert(content.includes('代码贡献规范'));
     });
   });
 
