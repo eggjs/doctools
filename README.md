@@ -7,18 +7,18 @@
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![NPM download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/doctools.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/doctools
+[npm-image]: https://img.shields.io/npm/v/egg-doctools.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/egg-doctools
 [travis-image]: https://img.shields.io/travis/eggjs/doctools.svg?style=flat-square
 [travis-url]: https://travis-ci.org/eggjs/doctools
 [codecov-image]: https://codecov.io/gh/eggjs/doctools/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/eggjs/doctools
 [david-image]: https://img.shields.io/david/eggjs/doctools.svg?style=flat-square
 [david-url]: https://david-dm.org/eggjs/doctools
-[snyk-image]: https://snyk.io/test/npm/doctools/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/doctools
-[download-image]: https://img.shields.io/npm/dm/doctools.svg?style=flat-square
-[download-url]: https://npmjs.org/package/doctools
+[snyk-image]: https://snyk.io/test/npm/egg-doctools/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/egg-doctools
+[download-image]: https://img.shields.io/npm/dm/egg-doctools.svg?style=flat-square
+[download-url]: https://npmjs.org/package/egg-doctools
 
 ## Feature
 
