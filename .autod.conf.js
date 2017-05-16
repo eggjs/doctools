@@ -7,8 +7,14 @@ module.exports = {
     'test',
   ],
   dep: [
+    'hexo-generator-index',
+    'hexo-generator-tag',
+    'hexo-renderer-less',
+    'hexo-server',
+    'jsdoc',
   ],
   devdep: [
+    'egg',
     'egg-ci',
     'egg-bin',
     'autod',
@@ -18,5 +24,8 @@ module.exports = {
   ],
   exclude: [
     './test/fixtures',
+  ],
+  semver: [
+    'egg@1.2.1',
   ],
 };
