@@ -20,14 +20,44 @@
 [download-image]: https://img.shields.io/npm/dm/doctools.svg?style=flat-square
 [download-url]: https://npmjs.org/package/doctools
 
+## Feature
+
+- Document generator using hexo
+- API document generator using jsdoc
+- Deploy to gh-pages
+- Local development
+- Theme for Egg.js
 
 ## Usage
+
+Installation
 
 ```bash
 npm i egg-doctools --save-dev
 ```
 
-doc server . --dest target
+Only support egg framework, see structure below
+
+```
+|- index.js
+|- docs
+|  |- source
+|  |  |- _data
+|  |  |  |- guide_toc.yml <- toc links
+|  |  |  `- menu.yml      <- menu links
+|  |  |- en               <- english document
+|  |  `- zh-cn            <- chinese document
+|  `- _config.yml         <- hexo config
+`- package.json
+```
+
+Run `doctools build` to generate document to `${baseDir}/run/doctools`.
+
+## Commands
+
+- `doctools build`: build document
+- `doctools server`: local development
+- `doctools deploy`: deploy to gh-pages
 
 ## License
 

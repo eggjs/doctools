@@ -1,5 +1,5 @@
 {
-  "name": "doctools",
+  "name": "egg-doctools",
   "version": "1.0.0",
   "description": "Doctools for Egg.js",
   "dependencies": {
