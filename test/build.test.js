@@ -112,7 +112,7 @@ describe('test/build.test.js', () => {
     it('should exit 1', function* () {
       yield coffee.fork(bin, [ 'build' ], { cwd })
         .debug()
-        .expect('stderr', /Cannot find module .*test\/fixtures\/error/)
+        .expect('stderr', /Cannot find module .*test[\/\\]fixtures[\/\\]error/)
         .expect('code', 1)
         .end();
     });
