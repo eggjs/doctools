@@ -18,7 +18,7 @@ describe('test/build.test.js', () => {
         .expect('code', 0)
         .end();
     });
-    // after(() => rimraf(target));
+    after(() => rimraf(target));
 
     it('should generate framework version and node version', function* () {
       const content = yield fs.readFile(path.join(target, 'public/index.html'), 'utf8');
@@ -101,6 +101,20 @@ describe('test/build.test.js', () => {
       const docPath = path.join(target, 'public/en/intro/index.html');
       const content = yield fs.readFile(docPath, 'utf8');
       assert(content.includes('English document'));
+    });
+  });
+
+  describe('build error', () => {
+    const cwd = path.join(__dirname, 'fixtures/error');
+    const target = path.join(cwd, 'run/doctools');
+    after(() => rimraf(target));
+
+    it('should exit 1', function* () {
+      yield coffee.fork(bin, [ 'build' ], { cwd })
+        .debug()
+        .expect('stderr', /Cannot find module .*test\/fixtures\/error/)
+        .expect('code', 1)
+        .end();
     });
   });
 });

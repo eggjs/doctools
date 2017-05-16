@@ -13,4 +13,5 @@ const args = process.argv.slice(2);
 const opt = {
   env: Object.assign({ NODE_PATH }, process.env),
 };
-cp.fork(cmd, args, opt);
+const c = cp.fork(cmd, args, opt);
+c.once('exit', code => process.exit(code));
