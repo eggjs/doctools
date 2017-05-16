@@ -71,7 +71,7 @@ describe('test/build.test.js', () => {
       assert(content.includes('Egg.js 是什么?'));
     });
 
-    it.only('should copy theme', function* () {
+    it('should copy theme', function* () {
       const docPath = path.join(target, 'public/index.html');
       const content = yield fs.readFile(docPath, 'utf8');
       assert(content.includes('overwrite index template'));
