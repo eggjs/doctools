@@ -72,4 +72,29 @@ describe('test/build.test.js', () => {
     });
   });
 
+  describe('build with external', () => {
+    const cwd = path.join(__dirname, 'fixtures/framework-external');
+    const target = path.join(cwd, 'run/doctools');
+    const repo = 'https://github.com/eggjs/egg.git';
+    before(function* () {
+      yield coffee.fork(bin, [ 'build', '--external', repo ], { cwd })
+        // .debug()
+        .expect('code', 0)
+        .end();
+    });
+    after(() => rimraf(target));
+
+    it('should use external document', function* () {
+      const docPath = path.join(target, 'public/zh-cn/intro/index.html');
+      const content = yield fs.readFile(docPath, 'utf8');
+      assert(content.includes('新手指南'));
+      assert(content.includes('Egg.js 是什么?'));
+    });
+
+    it('should overwrite external', function* () {
+      const docPath = path.join(target, 'public/en/intro/index.html');
+      const content = yield fs.readFile(docPath, 'utf8');
+      assert(content.includes('English document'));
+    });
+  });
 });
