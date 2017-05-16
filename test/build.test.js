@@ -14,11 +14,11 @@ describe('test/build.test.js', () => {
     const target = path.join(cwd, 'run/doctools');
     before(function* () {
       yield coffee.fork(bin, [ 'build' ], { cwd })
-        // .debug()
+        .debug()
         .expect('code', 0)
         .end();
     });
-    after(() => rimraf(target));
+    // after(() => rimraf(target));
 
     it('should generate framework version and node version', function* () {
       const content = yield fs.readFile(path.join(target, 'public/index.html'), 'utf8');
@@ -69,6 +69,12 @@ describe('test/build.test.js', () => {
       content = yield fs.readFile(docPath, 'utf8');
       assert(content.includes('新手指南'));
       assert(content.includes('Egg.js 是什么?'));
+    });
+
+    it('should copy theme', function* () {
+      const docPath = path.join(target, 'public/index.html');
+      const content = yield fs.readFile(docPath, 'utf8');
+      assert(content.includes('overwrite index template'));
     });
   });
 
