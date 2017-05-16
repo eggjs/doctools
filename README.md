@@ -9,12 +9,12 @@
 
 [npm-image]: https://img.shields.io/npm/v/doctools.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/doctools
-[travis-image]: https://img.shields.io/travis/{{org}}/doctools.svg?style=flat-square
-[travis-url]: https://travis-ci.org/{{org}}/doctools
-[codecov-image]: https://codecov.io/gh/{{org}}/doctools/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/{{org}}/doctools
-[david-image]: https://img.shields.io/david/{{org}}/doctools.svg?style=flat-square
-[david-url]: https://david-dm.org/{{org}}/doctools
+[travis-image]: https://img.shields.io/travis/eggjs/doctools.svg?style=flat-square
+[travis-url]: https://travis-ci.org/eggjs/doctools
+[codecov-image]: https://codecov.io/gh/eggjs/doctools/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/eggjs/doctools
+[david-image]: https://img.shields.io/david/eggjs/doctools.svg?style=flat-square
+[david-url]: https://david-dm.org/eggjs/doctools
 [snyk-image]: https://snyk.io/test/npm/doctools/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/doctools
 [download-image]: https://img.shields.io/npm/dm/doctools.svg?style=flat-square
