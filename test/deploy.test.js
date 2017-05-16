@@ -5,7 +5,7 @@ const coffee = require('coffee');
 const { rimraf } = require('mz-modules');
 const bin = path.join(__dirname, '../bin/doctools.js');
 
-describe('test/deploy.test.js', () => {
+describe.skip('test/deploy.test.js', () => {
 
   describe('deploy', () => {
     const cwd = path.join(__dirname, 'fixtures/framework');
