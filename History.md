@@ -1,4 +1,11 @@
 
+1.1.1 / 2017-05-17
+==================
+
+  * fix(deploy): fix deploy argument (#10)
+  * docs: fix npm badge url (#9)
+  * chore: update badge url (#8)
+
 1.1.0 / 2017-05-16
 ==================
 
