@@ -11,11 +11,12 @@ describe('test/deploy.test.js', () => {
 
   describe.only('deploy', () => {
     const fixtures = path.join(__dirname, 'fixtures');
-    const cwd = path.join(fixtures, 'doctools-test-repo');
+    const cwd = path.join(fixtures, 'doctools');
     before(function* () {
       yield mkdirp(cwd);
       yield runscript('git clone -b test-branch --depth 1 git@github.com:eggjs/doctools.git', { cwd: fixtures });
       try {
+        yield runscript('git remote -v', { cwd });
         yield runscript('git push origin :gh-pages', { cwd });
       } catch (e) {
         console.log('catch error %s, but ignore', e.message);
