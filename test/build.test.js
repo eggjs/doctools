@@ -76,6 +76,12 @@ describe('test/build.test.js', () => {
       const content = yield fs.readFile(docPath, 'utf8');
       assert(content.includes('overwrite index template'));
     });
+
+    it('should not escape html', function* () {
+      const docPath = path.join(target, 'public/zh-cn/html.html');
+      const content = yield fs.readFile(docPath, 'utf8');
+      assert(content.includes('<img src="/img.png">'));
+    });
   });
 
   describe('build with external', () => {
