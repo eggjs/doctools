@@ -9,7 +9,7 @@ const bin = path.join(__dirname, '../bin/doctools.js');
 
 describe('test/deploy.test.js', () => {
 
-  describe('deploy', () => {
+  describe.only('deploy', () => {
     const fixtures = path.join(__dirname, 'fixtures');
     const cwd = path.join(fixtures, 'doctools-test-repo');
     before(function* () {
