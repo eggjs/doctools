@@ -1,2 +1,0 @@
-# Doctools for egg
-
