@@ -10,7 +10,7 @@
     "common-bin": "^2.3.1",
     "cpy": "^5.0.0",
     "debug": "^2.6.6",
-    "gh-pages": "^1.0.0",
+    "gh-pages": "^0.12.0",
     "hexo": "^3.3.5",
     "hexo-generator-index": "^0.2.1",
     "hexo-generator-tag": "^0.2.0",
