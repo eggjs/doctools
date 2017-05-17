@@ -14,7 +14,7 @@ describe('test/deploy.test.js', () => {
     const cwd = path.join(fixtures, 'doctools-test-repo');
     before(function* () {
       yield mkdirp(cwd);
-      yield runscript('git clone git@github.com:eggjs/doctools-test-repo.git', { cwd: fixtures });
+      yield runscript('git clone -b test-branch --depth 1 git@github.com:eggjs/doctools.git', { cwd: fixtures });
       try {
         yield runscript('git push origin :gh-pages', { cwd });
       } catch (e) {
