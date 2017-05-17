@@ -2,22 +2,26 @@
 
 const path = require('path');
 const coffee = require('coffee');
-const { rimraf } = require('mz-modules');
+const { rimraf, mkdirp } = require('mz-modules');
+const runscript = require('runscript');
 const bin = path.join(__dirname, '../bin/doctools.js');
 
-describe.skip('test/deploy.test.js', () => {
+describe('test/deploy.test.js', () => {
 
-  describe('deploy', () => {
-    const cwd = path.join(__dirname, 'fixtures/framework');
-    const target = path.join(cwd, 'run/doctools');
+  describe.skip('deploy', () => {
+    const fixtures = path.join(__dirname, 'fixtures');
+    const cwd = path.join(fixtures, 'doctools');
     before(function* () {
+      yield mkdirp(cwd);
+      yield runscript('git clone -b test-branch --depth 1 git@github.com:eggjs/doctools.git', { cwd: fixtures });
+    });
+    after(() => rimraf(cwd));
+
+    it('should work', function* () {
       yield coffee.fork(bin, [ 'deploy' ], { cwd })
         .debug()
         .expect('code', 0)
         .end();
     });
-    after(() => rimraf(target));
-
-    it('should work', () => {});
   });
 });
