@@ -8,7 +8,7 @@ const bin = path.join(__dirname, '../bin/doctools.js');
 
 describe('test/deploy.test.js', () => {
 
-  describe.only('deploy', () => {
+  describe.skip('deploy', () => {
     const fixtures = path.join(__dirname, 'fixtures');
     const cwd = path.join(fixtures, 'doctools');
     before(function* () {
