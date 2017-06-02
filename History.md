@@ -1,4 +1,10 @@
 
+1.2.0 / 2017-06-02
+==================
+
+  * feat: support generating plugin list (#15)
+  * feat: use getLoadUnits from egg-utils (#14)
+
 1.1.4 / 2017-05-18
 ==================
 
