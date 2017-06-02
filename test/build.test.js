@@ -87,11 +87,6 @@ describe('test/build.test.js', () => {
       const pluginData = yield fs.readFile(path.join(target, 'source/_data/plugins.yml'), 'utf8');
       assert(pluginData.includes('- onerror\n'));
 
-      let pluginIndex = yield fs.readFile(path.join(target, 'source/zh-cn/plugins/index.md'), 'utf8');
-      assert(pluginIndex.includes('layout: plugin\n'));
-      pluginIndex = yield fs.readFile(path.join(target, 'source/en/plugins/index.md'), 'utf8');
-      assert(pluginIndex.includes('layout: plugin\n'));
-
       const pluginDocs = yield fs.readdir(path.join(target, 'source/zh-cn/plugins'));
       assert(pluginDocs.length === 14);
 
@@ -99,6 +94,11 @@ describe('test/build.test.js', () => {
       assert(pluginA.includes('中文文档'));
       pluginA = yield fs.readFile(path.join(target, 'source/en/plugins/a.md'), 'utf8');
       assert(pluginA.includes('English Document'));
+
+      let pluginIndex = yield fs.readFile(path.join(target, 'public/zh-cn/plugins/index.html'), 'utf8');
+      assert(pluginIndex.includes('内置插件列表'));
+      pluginIndex = yield fs.readFile(path.join(target, 'public/en/plugins/index.html'), 'utf8');
+      assert(pluginIndex.includes('Plugin List'));
     });
   });
 

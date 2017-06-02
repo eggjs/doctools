@@ -1,6 +1,6 @@
 <div class="page-main">
   <article class="markdown-body">
-    <h1>内置插件列表</h1>
+    <h1>{{page.title}}</h1>
     <ul>
     {% for plugin in site.data.plugins %}
       <li>
