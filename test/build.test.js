@@ -82,6 +82,24 @@ describe('test/build.test.js', () => {
       const content = yield fs.readFile(docPath, 'utf8');
       assert(content.includes('<img src="/img.png">'));
     });
+
+    it('should generate plugin pages', function* () {
+      const pluginData = yield fs.readFile(path.join(target, 'source/_data/plugins.yml'), 'utf8');
+      assert(pluginData.includes('- onerror\n'));
+
+      let pluginIndex = yield fs.readFile(path.join(target, 'source/zh-cn/plugins/index.md'), 'utf8');
+      assert(pluginIndex.includes('layout: plugin\n'));
+      pluginIndex = yield fs.readFile(path.join(target, 'source/en/plugins/index.md'), 'utf8');
+      assert(pluginIndex.includes('layout: plugin\n'));
+
+      const pluginDocs = yield fs.readdir(path.join(target, 'source/zh-cn/plugins'));
+      assert(pluginDocs.length === 14);
+
+      let pluginA = yield fs.readFile(path.join(target, 'source/zh-cn/plugins/a.md'), 'utf8');
+      assert(pluginA.includes('中文文档'));
+      pluginA = yield fs.readFile(path.join(target, 'source/en/plugins/a.md'), 'utf8');
+      assert(pluginA.includes('English Document'));
+    });
   });
 
   describe('build with external', () => {

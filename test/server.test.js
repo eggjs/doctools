@@ -20,7 +20,7 @@ describe('test/server.test.js', () => {
       c.expect('code', 0).end();
 
       // wait server listen
-      yield sleep(35000);
+      yield sleep(40000);
       proc = c.proc;
     });
     after(() => {

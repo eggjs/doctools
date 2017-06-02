@@ -51,7 +51,7 @@
     "pkgfiles": "egg-bin pkgfiles"
   },
   "ci": {
-    "version": "6, 7",
+    "version": "6",
     "license": true
   },
   "repository": {
