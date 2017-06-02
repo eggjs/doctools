@@ -9,9 +9,10 @@
   "dependencies": {
     "common-bin": "^2.3.1",
     "cpy": "^5.0.0",
-    "debug": "^2.6.6",
+    "debug": "^2.6.8",
+    "egg-utils": "^2.2.0",
     "gh-pages": "^0.12.0",
-    "hexo": "^3.3.5",
+    "hexo": "^3.3.7",
     "hexo-generator-index": "^0.2.1",
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-less": "^0.2.0",
@@ -28,14 +29,14 @@
   },
   "devDependencies": {
     "autod": "^2.8.0",
-    "coffee": "^3.3.1",
+    "coffee": "^3.3.2",
     "egg": "^1.2.1",
-    "egg-bin": "^3.3.2",
+    "egg-bin": "^3.4.1",
     "egg-ci": "^1.6.0",
     "eslint": "^3.19.0",
-    "eslint-config-egg": "^4.1.0",
+    "eslint-config-egg": "^4.2.0",
     "supertest": "^3.0.0",
-    "webstorm-disable-index": "^1.1.2"
+    "webstorm-disable-index": "^1.2.0"
   },
   "engines": {
     "node": ">=6.0.0"

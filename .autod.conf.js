@@ -27,5 +27,6 @@ module.exports = {
   ],
   semver: [
     'egg@1.2.1',
+    'gh-pages@^0.12.0'
   ],
 };
