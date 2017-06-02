@@ -1,4 +1,9 @@
 
+1.2.1 / 2017-06-02
+==================
+
+  * fix: don't create plugin index by tools, should support i18n (#16)
+
 1.2.0 / 2017-06-02
 ==================
 
