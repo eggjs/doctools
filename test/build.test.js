@@ -50,13 +50,17 @@ describe('test/build.test.js', () => {
     });
 
     it('should copy contributing', function* () {
+      const docMdPath = path.join(target, 'source/en/contributing.md');
+      let content = yield fs.readFile(docMdPath, 'utf8');
+      assert(content.includes('title: "Contribution Guide"'));
+
       let docPath = path.join(target, 'public/en/contributing.html');
-      let content = yield fs.readFile(docPath, 'utf8');
-      assert(content.includes('Contribution Guide'));
+      content = yield fs.readFile(docPath, 'utf8');
+      assert(content.includes('<h1>Contribution Guide</h1>'));
 
       docPath = path.join(target, 'public/zh-cn/contributing.html');
       content = yield fs.readFile(docPath, 'utf8');
-      assert(content.includes('代码贡献规范'));
+      assert(content.includes('<h1>代码贡献规范</h1>'));
     });
 
     it('should support languages config', function* () {
