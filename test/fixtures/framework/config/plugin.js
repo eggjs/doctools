@@ -7,4 +7,8 @@ module.exports = {
     enable: true,
     path: path.join(__dirname, '../plugin/a'),
   },
+  b: {
+    enable: true,
+    path: path.join(__dirname, '../plugin/b'),
+  },
 };

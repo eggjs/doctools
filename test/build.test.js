@@ -50,13 +50,17 @@ describe('test/build.test.js', () => {
     });
 
     it('should copy contributing', function* () {
+      const docMdPath = path.join(target, 'source/en/contributing.md');
+      let content = yield fs.readFile(docMdPath, 'utf8');
+      assert(content.includes('title: "Contribution Guide"'));
+
       let docPath = path.join(target, 'public/en/contributing.html');
-      let content = yield fs.readFile(docPath, 'utf8');
-      assert(content.includes('Contribution Guide'));
+      content = yield fs.readFile(docPath, 'utf8');
+      assert(content.includes('<h1>Contribution Guide</h1>'));
 
       docPath = path.join(target, 'public/zh-cn/contributing.html');
       content = yield fs.readFile(docPath, 'utf8');
-      assert(content.includes('代码贡献规范'));
+      assert(content.includes('<h1>代码贡献规范</h1>'));
     });
 
     it('should support languages config', function* () {
@@ -88,12 +92,19 @@ describe('test/build.test.js', () => {
       assert(pluginData.includes('- onerror\n'));
 
       const pluginDocs = yield fs.readdir(path.join(target, 'source/zh-cn/plugins'));
-      assert(pluginDocs.length === 14);
+      assert(pluginDocs.length === 15);
 
       let pluginA = yield fs.readFile(path.join(target, 'source/zh-cn/plugins/a.md'), 'utf8');
-      assert(pluginA.includes('中文文档'));
+      assert(pluginA.includes('title: "中文文档"\n---\n'));
       pluginA = yield fs.readFile(path.join(target, 'source/en/plugins/a.md'), 'utf8');
-      assert(pluginA.includes('English Document'));
+      assert(pluginA.includes('title: "English Document"\n---\n'));
+
+      let pluginB = yield fs.readFile(path.join(target, 'source/zh-cn/plugins/b.md'), 'utf8');
+      assert(pluginB.includes('title: "@scope/module"\n---\n'));
+      pluginB = yield fs.readFile(path.join(target, 'source/en/plugins/b.md'), 'utf8');
+      assert(pluginB.includes('title: "@scope/module"\n---\n'));
+      const pluginBDoc = yield fs.readFile(path.join(target, 'public/en/plugins/b.html'), 'utf8');
+      assert(pluginBDoc.includes('<h1>@scope/module</h1>'));
 
       let pluginIndex = yield fs.readFile(path.join(target, 'public/zh-cn/plugins/index.html'), 'utf8');
       assert(pluginIndex.includes('内置插件列表'));
