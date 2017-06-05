@@ -1,6 +1,6 @@
 {
   "name": "egg-doctools",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Doctools for Egg.js",
   "main": "lib/index.js",
   "bin": {
