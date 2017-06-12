@@ -22,8 +22,8 @@ describe('test/build.test.js', () => {
 
     it('should generate framework version and node version', function* () {
       const content = yield fs.readFile(path.join(target, 'public/index.html'), 'utf8');
-      assert(content.includes('Latest: <strong>1.0.0</strong>'));
-      assert(content.includes('Node.js: <strong>>=6.0.0</strong>'));
+      assert(content.includes('Latest: 1.0.0'));
+      assert(content.includes('Node.js: >=6.0.0'));
     });
 
     it('should generate package.json', function* () {
@@ -78,6 +78,7 @@ describe('test/build.test.js', () => {
     it('should copy theme', function* () {
       const docPath = path.join(target, 'public/index.html');
       const content = yield fs.readFile(docPath, 'utf8');
+      console.log(content);
       assert(content.includes('overwrite index template'));
     });
 
@@ -110,6 +111,15 @@ describe('test/build.test.js', () => {
       assert(pluginIndex.includes('内置插件列表'));
       pluginIndex = yield fs.readFile(path.join(target, 'public/en/plugins/index.html'), 'utf8');
       assert(pluginIndex.includes('Plugin List'));
+    });
+
+    it('should generate links', function* () {
+      const docPath = path.join(target, 'public/index.html');
+      const content = yield fs.readFile(docPath, 'utf8');
+      assert(content.includes('<dt>Github</dt>'));
+      assert(content.includes('<dt>Community</dt>'));
+      assert(content.includes('<dt>Links</dt>'));
+      assert(content.includes('<dd><a href="https://github.com/eggjs" target="_blank">Organization</a></dd>'));
     });
   });
 

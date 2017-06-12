@@ -16,6 +16,7 @@
     "hexo-generator-index": "^0.2.1",
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-less": "^0.2.0",
+    "hexo-renderer-nunjucks": "^1.0.5",
     "hexo-server": "^0.2.0",
     "jsdoc": "^3.4.3",
     "markdown-it": "^8.3.1",

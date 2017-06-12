@@ -9,5 +9,5 @@
     {% endfor %}
     </ul>
   </article>
-  {{ partial('partial/aside') }}
+  {% include "partial/aside.nunjucks" %}
 </div>
