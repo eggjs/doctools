@@ -31,7 +31,7 @@ describe('test/server.test.js', () => {
       return request(url)
         .get('/')
         .expect(200)
-        .expect(/Latest: <strong>1.0.0<\/strong>/);
+        .expect(/Latest: 1.0.0/);
     });
 
     it('request api', () => {

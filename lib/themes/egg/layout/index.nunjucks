@@ -12,6 +12,6 @@
   </div>
 </div>
 <div class="index-aside">
-{{ partial('partial/aside') }}
+{% include "partial/aside.nunjucks" %}
 </div>
-{{ partial('partial/footer') }}
+{% include "partial/footer.nunjucks" %}
