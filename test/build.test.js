@@ -78,7 +78,6 @@ describe('test/build.test.js', () => {
     it('should copy theme', function* () {
       const docPath = path.join(target, 'public/index.html');
       const content = yield fs.readFile(docPath, 'utf8');
-      console.log(content);
       assert(content.includes('overwrite index template'));
     });
 

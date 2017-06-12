@@ -16,7 +16,8 @@ describe('test/server.test.js', () => {
     let proc;
     before(function* () {
       const c = coffee.fork(bin, [ 'server' ], { cwd });
-      // c.debug();
+      c.debug();
+      c.coverage(false);
       c.expect('code', 0).end();
 
       // wait server listen
