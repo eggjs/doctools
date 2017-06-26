@@ -1,4 +1,10 @@
 
+2.0.1 / 2017-06-26
+==================
+
+  * fix: make footer style look good (#21)
+  * test: disable coverage when fork (#20)
+
 2.0.0 / 2017-06-12
 ==================
 
