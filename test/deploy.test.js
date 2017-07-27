@@ -12,9 +12,14 @@ describe('test/deploy.test.js', () => {
   describe('deploy', () => {
     const fixtures = path.join(__dirname, 'fixtures');
     const cwd = path.join(fixtures, 'doctools');
+    let originMsg;
+
     before(function* () {
+      yield rimraf(cwd);
       yield mkdirp(cwd);
       yield runscript('git clone -b test-branch git@github.com:eggjs/doctools.git', { cwd: fixtures });
+      originMsg = yield runscript('git log --format=%B -n 1', { stdio: 'pipe', cwd });
+      originMsg = originMsg.stdout.toString().replace(/\n*$/, '');
       try {
         yield runscript('git push origin :gh-pages', { cwd });
       } catch (err) {
@@ -30,8 +35,11 @@ describe('test/deploy.test.js', () => {
         .end();
 
       yield runscript('git fetch', { cwd });
-      const stdio = yield runscript('git branch -r', { cwd, stdio: 'pipe' });
+      let stdio = yield runscript('git branch -r', { cwd, stdio: 'pipe' });
       assert(stdio.stdout.toString().includes('origin/gh-pages'));
+
+      stdio = yield runscript('git log origin/gh-pages --format=%B -n 1', { cwd, stdio: 'pipe' });
+      assert(stdio.stdout.toString().includes(originMsg));
     });
   });
 });
