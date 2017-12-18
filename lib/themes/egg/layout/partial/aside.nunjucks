@@ -7,6 +7,29 @@
 <script>
 var mobileTrigger = document.getElementById('mobileTrigger');
 var mobileAside = document.getElementById('mobileAside');
+
+// 展开/收起 菜单项
+mobileAside.onclick = function(e) {
+  const targetId = e.target.id;
+  if (targetId && targetId.indexOf('title-') > -1) {
+    const title = targetId.replace('title-', '');
+    const panelEle = document.getElementById('panel-' + title);
+    if (panelEle) {
+      // 当前收起/展开状态
+      const curClosed = !!(panelEle.className.indexOf('panel-hidden') > -1);
+      // 改变样式
+      panelEle.className = curClosed ? '' : 'panel-hidden';
+      // 记录数据到 localStorage
+      try {
+        let menuInfo = JSON.parse(window.localStorage.getItem('menuInfo')) || {};
+        menuInfo[title] = { closed: !curClosed } // closed 状态取反
+        window.localStorage.setItem('menuInfo', JSON.stringify(menuInfo));
+      } catch (e) {}
+    }
+  }
+};
+
+// 展开菜单栏
 mobileTrigger.onclick = function(e) {
   e.preventDefault();
   if (mobileAside.className.indexOf('mobile-show') === -1) {
@@ -15,4 +38,30 @@ mobileTrigger.onclick = function(e) {
     mobileAside.className = 'toc';
   }
 };
+
+// 初始化菜单状态
+(function() {
+  // 因为用户切换 url 时，需重新刷新页面，因此要把菜单状态记录在 localstorage menuInfo 字段中。
+  let menuInfo;
+  try { // 可能 JSON.parse 处理失败，或调用 localStroage 失败。所以需要 try catch
+    menuInfo = JSON.parse(window.localStorage.getItem('menuInfo'));
+    if (!menuInfo) {
+      menuInfo = {};
+      window.localStorage.setItem('menuInfo', JSON.stringify(menuInfo)); // 初始化写数据。
+    }
+  } catch (e) {
+    // 默认给 menuInfo 空对象。
+    menuInfo = {};
+  }
+
+  // 初始化渲染菜单
+  for (const title in menuInfo) {
+    if (menuInfo[title] && menuInfo[title].closed) { // 表示菜单是收起状态
+      const panelEle = document.getElementById('panel-' + title);
+      if (panelEle) {
+        panelEle.className = 'panel-hidden';
+      }
+    }
+  }
+})();
 </script>
