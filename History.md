@@ -1,4 +1,11 @@
 
+2.1.1 / 2017-12-19
+==================
+
+**fixes**
+  * [[`08f6fda`](http://github.com/eggjs/doctools/commit/08f6fdab25457900e025a48ab1fddeee79aa1407)] - fix: set the plugin directory which is relative to baseDir (#27) (Haoliang Gao <<sakura9515@gmail.com>>)
+  * [[`323a0ac`](http://github.com/eggjs/doctools/commit/323a0acd543bc2f7273594c01a4eb683d9bbac1a)] - fix: clicking on menu button makes the page jump to top position. (#25) (Zhongyuan <<zhang.zhongyuan11@gmail.com>>)
+
 2.1.0 / 2017-07-27
 ==================
 
