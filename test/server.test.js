@@ -2,7 +2,8 @@
 
 const path = require('path');
 const coffee = require('coffee');
-const { sleep } = require('mz-modules');
+const fs = require('mz/fs');
+const { sleep, rimraf } = require('mz-modules');
 const request = require('supertest');
 const bin = path.join(__dirname, '../bin/doctools.js');
 

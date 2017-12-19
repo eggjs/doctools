@@ -2,6 +2,7 @@
 
 const path = require('path');
 const coffee = require('coffee');
+const fs = require('mz/fs');
 const { rimraf, mkdirp } = require('mz-modules');
 const runscript = require('runscript');
 const assert = require('assert');
@@ -12,6 +13,7 @@ describe('test/deploy.test.js', () => {
   describe('deploy', () => {
     const fixtures = path.join(__dirname, 'fixtures');
     const cwd = path.join(fixtures, 'doctools');
+    const target = path.join(cwd, 'run/doctools');
     const nodeModules = path.join(cwd, 'node_modules');
     let originMsg;
 
