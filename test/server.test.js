@@ -12,9 +12,12 @@ describe('test/server.test.js', () => {
   describe('launsh server', () => {
     const url = 'http://localhost:4000';
     const cwd = path.join(__dirname, 'fixtures/framework');
-    // const target = path.join(cwd, 'run/doctools');
+    const nodeModules = path.join(cwd, 'node_modules');
+    const target = path.join(cwd, 'run/doctools');
+
     let proc;
     before(function* () {
+      yield fs.symlink(path.join(process.cwd(), 'node_modules'), nodeModules);
       const c = coffee.fork(bin, [ 'server' ], { cwd });
       c.debug();
       c.coverage(false);
@@ -26,6 +29,10 @@ describe('test/server.test.js', () => {
     });
     after(() => {
       proc.kill();
+    });
+    after(function* () {
+      yield rimraf(target);
+      yield rimraf(nodeModules);
     });
 
     it('request index', () => {

@@ -12,13 +12,18 @@ describe('test/build.test.js', () => {
   describe('build framework', () => {
     const cwd = path.join(__dirname, 'fixtures/framework');
     const target = path.join(cwd, 'run/doctools');
+    const nodeModules = path.join(cwd, 'node_modules');
     before(function* () {
+      yield fs.symlink(path.join(process.cwd(), 'node_modules'), nodeModules);
       yield coffee.fork(bin, [ 'build' ], { cwd })
         .debug()
         .expect('code', 0)
         .end();
     });
-    after(() => rimraf(target));
+    after(function* () {
+      yield rimraf(target);
+      yield rimraf(nodeModules);
+    });
 
     it('should generate framework version and node version', function* () {
       const content = yield fs.readFile(path.join(target, 'public/index.html'), 'utf8');
