@@ -134,6 +134,7 @@ describe('test/build.test.js', () => {
     const nodeModules = path.join(cwd, 'node_modules');
 
     before(function* () {
+      yield fs.symlink(path.join(process.cwd(), 'node_modules'), nodeModules);
       yield coffee.fork(bin, [ 'build', '--external', repo ], { cwd })
         // .debug()
         .expect('code', 0)
