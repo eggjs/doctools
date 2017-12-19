@@ -131,13 +131,18 @@ describe('test/build.test.js', () => {
     const cwd = path.join(__dirname, 'fixtures/framework-external');
     const target = path.join(cwd, 'run/doctools');
     const repo = 'https://github.com/eggjs/egg.git';
+    const nodeModules = path.join(cwd, 'node_modules');
+
     before(function* () {
       yield coffee.fork(bin, [ 'build', '--external', repo ], { cwd })
         // .debug()
         .expect('code', 0)
         .end();
     });
-    after(() => rimraf(target));
+    after(function* () {
+      yield rimraf(target);
+      yield rimraf(nodeModules);
+    });
 
     it('should use external document', function* () {
       const docPath = path.join(target, 'public/zh-cn/intro/index.html');

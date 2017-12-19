@@ -18,7 +18,6 @@ describe('test/deploy.test.js', () => {
     let originMsg;
 
     before(function* () {
-      yield fs.symlink(path.join(process.cwd(), 'node_modules'), nodeModules);
       yield rimraf(cwd);
       yield mkdirp(cwd);
       yield runscript('git clone -b test-branch git@github.com:eggjs/doctools.git', { cwd: fixtures });
@@ -29,6 +28,7 @@ describe('test/deploy.test.js', () => {
       } catch (err) {
         console.log('catch error %s, but ignore', err.message);
       }
+      yield fs.symlink(path.join(process.cwd(), 'node_modules'), nodeModules);
     });
     after(function* () {
       yield rimraf(target);
