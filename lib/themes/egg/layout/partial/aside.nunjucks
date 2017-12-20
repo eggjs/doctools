@@ -15,4 +15,5 @@ mobileTrigger.onclick = function(e) {
     mobileAside.className = 'toc';
   }
 };
+mobileAside.querySelector(`[href="${location.pathname}"]`).className += ' highlight';
 </script>
