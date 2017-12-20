@@ -8,23 +8,49 @@
 var mobileTrigger = document.getElementById('mobileTrigger');
 var mobileAside = document.getElementById('mobileAside');
 
+var expandMenu = function(title) {
+  // handle icon
+  const collapseIcon = document.getElementById('collapse-icon-' + title);
+  if (collapseIcon) {
+    collapseIcon.className = 'icon opend';
+  }
+  // handle panelEle
+  const panelEle = document.getElementById('panel-' + title);
+  if (panelEle) {
+    panelEle.className = '';
+  }
+}
+
+var collapseMenu = function(title) {
+  // handle icon
+  const collapseIcon = document.getElementById('collapse-icon-' + title);
+  if (collapseIcon) {
+    collapseIcon.className = 'icon closed';
+  }
+  // handle panelEle
+  const panelEle = document.getElementById('panel-' + title);
+  if (panelEle) {
+    panelEle.className = 'aside-panel-hidden';
+  }
+}
+
 mobileAside.onclick = function(e) {
   const targetId = e.target.id;
-  if (targetId && targetId.indexOf('title-') > -1) {
-    const title = targetId.replace('title-', '');
-    const panelEle = document.getElementById('panel-' + title);
-    if (panelEle) {
-      // current closed status
-      const curClosed = !!(panelEle.className.indexOf('panel-hidden') > -1);
+  if (targetId && (targetId.indexOf('title-') > -1 || targetId.indexOf('collapse-icon-') > -1)) {
+    const title = targetId.replace('title-', '').replace('collapse-icon-', '');
+    try { 
+      // the the browser may have no localStroage or JSON.parse may throw exception.
+      const menuInfo = JSON.parse(window.localStorage.getItem('menuInfo'));
+      // current menu status
+      const curClosed = menuInfo[title].closed;
+
       // change UI
-      panelEle.className = curClosed ? '' : 'panel-hidden';
+      curClosed ? expandMenu(title) : collapseMenu(title);
+
       // save menuInfo to localStorage
-      try {
-        let menuInfo = JSON.parse(window.localStorage.getItem('menuInfo')) || {};
-        menuInfo[title] = { closed: !curClosed } // opposite
-        window.localStorage.setItem('menuInfo', JSON.stringify(menuInfo));
-      } catch (e) {}
-    }
+      menuInfo[title] = { closed: !curClosed } // opposite
+      window.localStorage.setItem('menuInfo', JSON.stringify(menuInfo));
+    } catch (e) {}
   }
 };
 
@@ -53,10 +79,9 @@ mobileTrigger.onclick = function(e) {
 
   for (const title in menuInfo) {
     if (menuInfo[title] && menuInfo[title].closed) { // menu in closed status.
-      const panelEle = document.getElementById('panel-' + title);
-      if (panelEle) {
-        panelEle.className = 'panel-hidden';
-      }
+      collapseMenu(title);
+    } else {
+      expandMenu(title);
     }
   }
 })();
