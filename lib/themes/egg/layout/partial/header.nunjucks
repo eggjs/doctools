@@ -8,12 +8,10 @@
         </form>
       </li>
       {{ menu_link() }}
-      <li class="translations">
+      <li id="translations" class="translations">
         <a class="nav-link">{{ __('header.translations') }}</a>
         <span class="arrow"></span>
-        <ul class="dropdown-content">
-          {{ language_list()}}
-        </ul>
+        {{ language_list()}}
       </li>
       <li><iframe src="https://ghbtns.com/github-btn.html?user=eggjs&repo=egg&type=star&count=true" frameborder="0" scrolling="0" width="150px" height="20px"></iframe></li>
     </ul>
@@ -26,3 +24,39 @@
     </a>
   </header>
 </div>
+<script>
+  var translations = document.getElementById('translations');
+
+  // if no languageInput, no need to show translations item.
+  var languageInput = document.getElementById('languageInput');
+  if (!languageInput) {
+    translations.style.display = 'none';
+  }
+
+  // if no languageInput value, no need to show translations item.
+  var languageValue = languageInput.value;
+  if (!languageValue) {
+    translations.style.display = 'none';
+  }
+
+  var dropdownContent = document.getElementById('dropdownContent');
+  
+  dropdownContent.onclick = function(e) {
+    e.preventDefault();
+    const targetId = e.target.id;
+    if (targetId && languageValue.indexOf(targetId) > -1) {
+      var location = window.location;
+      if (location) {
+        var origin = location.origin;
+        var pathname = location.pathname;
+
+        // language keyword filter
+        languageValue.split(',').forEach(function(item) {
+          pathname = pathname.replace('/' + item, '');
+        });
+
+        location.href = origin + '/' + targetId + pathname;
+      }
+    }
+  }
+</script>
