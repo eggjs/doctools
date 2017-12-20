@@ -1,6 +1,15 @@
 <aside id="mobileAside" class="toc">
   <div class="mobile-menu">
-    <ul>{{ menu_link() }}</ul>
+    <ul>
+      {{ menu_link() }}
+      <li class="translations">
+        <a class="nav-link">{{ __('header.translations') }}</a>
+        <span class="arrow"></span>
+        <ul class="dropdown-content">
+          {{ language_list()}}
+        </ul>
+      </li>
+    </ul>
   </div>
   {{ guide_toc() }}
 </aside>
