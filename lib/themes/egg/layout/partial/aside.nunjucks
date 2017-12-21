@@ -2,23 +2,18 @@
   <div class="mobile-menu">
     <ul>
       {{ menu_link() }}
-      <li id="mobiletTranslations" class="translations">
-        <a class="nav-link">{{ __('header.translations') }}</a>
-        <span class="arrow"></span>
-        {{ language_list()}}
-      </li>
+      {% set langs = language_list() %}
+      {% if langs.length > 0 %}
+        <li class="translations">
+          <a class="nav-link">{{ __('header.translations') }}</a>
+          {{ language_list()}}
+        </li>
+      {% endif %}
     </ul>
   </div>
   {{ guide_toc() }}
 </aside>
 <script>
-// if no languageInput or no languageInput value, no need to show translations item.
-var languageInput = document.getElementById('languageInput');
-if (!languageInput || !languageInput.value) {
-  const mobiletTranslations = document.getElementById('mobiletTranslations');
-  mobiletTranslations.style.display = 'none';
-}
-
 var mobileTrigger = document.getElementById('mobileTrigger');
 var mobileAside = document.getElementById('mobileAside');
 
