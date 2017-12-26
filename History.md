@@ -1,4 +1,10 @@
 
+2.2.0 / 2017-12-26
+==================
+
+**features**
+  * [[`c70897e`](http://github.com/eggjs/doctools/commit/c70897ee14ed39958ac2f4dfb57279e4d06a80ec)] - feat: let menu collapse and support multiple language (#26) (sam <<289623783@qq.com>>)
+
 2.1.1 / 2017-12-19
 ==================
 
