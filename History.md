@@ -1,4 +1,11 @@
 
+2.2.1 / 2017-12-26
+==================
+
+**fixes**
+  * [[`5ab346c`](http://github.com/eggjs/doctools/commit/5ab346c4c428ffadfc1e059e0634160313687dd9)] - fix: fix language in 'en' 404 problem. (#29) (sam <<289623783@qq.com>>)
+  * [[`b62cce9`](http://github.com/eggjs/doctools/commit/b62cce9e5e8be533b42c2b6932bc859ac0f88370)] - fix: set menuInfo default value. (#28) (sam <<289623783@qq.com>>)
+
 2.2.0 / 2017-12-26
 ==================
 
