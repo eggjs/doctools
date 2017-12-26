@@ -50,8 +50,9 @@ mobileAside.onclick = function(e) {
     try { 
       // the the browser may have no localStroage or JSON.parse may throw exception.
       const menuInfo = JSON.parse(window.localStorage.getItem('menuInfo'));
+        
       // current menu status
-      const curClosed = menuInfo[title].closed;
+      const curClosed = menuInfo[title] ? menuInfo[title].closed : false; // default false
 
       // change UI
       curClosed ? expandMenu(title) : collapseMenu(title);
