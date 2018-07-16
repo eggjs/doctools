@@ -1,4 +1,10 @@
 
+2.4.0 / 2018-07-16
+==================
+
+**others**
+  * [[`635e460`](http://github.com/eggjs/doctools/commit/635e460eb07fdd167a622492b3d42ce412b129a2)] - deps: use node10 (#32) (Haoliang Gao <<sakura9515@gmail.com>>)
+
 2.3.1 / 2018-01-19
 ==================
 
