@@ -1,4 +1,10 @@
 
+2.5.0 / 2018-10-22
+==================
+
+**features**
+  * [[`a45c69e`](http://github.com/eggjs/doctools/commit/a45c69eb10d49951fefc4cb69a21dacb5f510f6d)] - feat: add promotion link (#33) (Haoliang Gao <<sakura9515@gmail.com>>)
+
 2.4.0 / 2018-07-16
 ==================
 
