@@ -1,0 +1,30 @@
+<div class="post-toc" id="post-toc">
+  <a id="toc-toggle" class="toc-toggle"></a>
+  {{ toc(page.content, { class: 'toc-detail', list_number: true, max_depth: 3}) }}
+</div>
+
+<script>
+
+var tocContainer = document.getElementById('post-toc');
+var tocToggle = document.getElementById('toc-toggle');
+var tocDetail = document.getElementsByClassName('toc-detail')[0];
+
+tocToggle.onclick = function(e) {  
+  var className = tocContainer.className;
+  if(className.indexOf('collapsed') !== -1){
+    tocContainer.className = 'post-toc';
+  } else {
+    tocContainer.className = 'post-toc collapsed';
+  }  
+};
+
+(function(){
+  if(!tocDetail){
+    tocContainer.style.display = 'none';
+  }
+
+  if(tocDetail){
+    tocContainer.style.maxHeight = window.innerHeight - (tocContainer.offsetTop || 116) * 2 + 'px';
+  }
+})();
+</script>
