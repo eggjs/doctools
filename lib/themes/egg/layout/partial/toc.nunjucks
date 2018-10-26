@@ -1,6 +1,6 @@
 <div class="post-toc" id="post-toc">
   <a id="toc-toggle" class="toc-toggle"></a>
-  {{ toc(page.content, { class: 'toc-detail', list_number: false, max_depth: 4}) }}
+  {{ toc(page.content, { class: 'toc-detail', list_number: true, max_depth: 4}) }}
 </div>
 
 <script>
@@ -21,6 +21,10 @@ tocToggle.onclick = function(e) {
 (function(){
   if(!tocDetail){
     tocContainer.style.display = 'none';
+  }
+
+  if(tocDetail){
+    tocContainer.style.maxHeight = window.innerHeight - (tocContainer.offsetTop || 116) * 2 + 'px';
   }
 })();
 </script>
