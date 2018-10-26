@@ -1,4 +1,10 @@
 
+2.6.0 / 2018-10-26
+==================
+
+**features**
+  * [[`87ab21c`](http://github.com/eggjs/doctools/commit/87ab21cf819374e4e74a228975b1ad2678406690)] - feat: add post toc support (#34) (Suyi <<thonatos@users.noreply.github.com>>)
+
 2.5.0 / 2018-10-22
 ==================
 
