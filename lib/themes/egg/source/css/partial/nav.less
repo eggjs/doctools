@@ -1,10 +1,11 @@
 .nav {
-  background: #f9f9f9;
+  background: #fff;
   border-bottom: 1px solid rgba(230, 230, 230, 0.99);
-  z-index:2;
+  z-index: 2;
   width: 100%;
-  position:fixed;
-  top:0;
+  position: fixed;
+  top: 0;
+
   header {
     /*shift way to clear float because of the overflow hidden will hide the algolia*/
     &:after {
@@ -50,11 +51,11 @@
 
     a {
       display: inline-block;
-      color: #3C3C3C;
-      letter-spacing:0.5px;
+      color: #3c3c3c;
+      letter-spacing: 0.5px;
       font-weight: 500;
-      &:hover{
-        color:#22ab28;
+      &:hover {
+        color: #22ab28;
         transition: 0.6s all;
       }
     }
@@ -71,15 +72,15 @@
 
 .translations {
   display: inline-block;
-  ul.nav-item{
+  ul.nav-item {
     height: 70px;
     padding-left: 0px;
   }
 }
-.translations:hover .dropdown-content{
+.translations:hover .dropdown-content {
   display: block;
 }
-.arrow{
+.arrow {
   display: inline-block;
   vertical-align: middle;
   margin-top: -1px;
@@ -87,14 +88,14 @@
   margin-right: -14px;
   width: 0;
   height: 0;
-  border-left:4px solid transparent;
+  border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-radius: 1px;
-  border-top: 5px solid #3C3C3C;
+  border-top: 5px solid #3c3c3c;
 }
 
 .nav-link {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .dropdown-content {
@@ -102,8 +103,8 @@
   position: absolute;
   background-color: #fff;
   padding: 10px 0;
-  border: 1px solid #E6E6E6;
-  border-bottom-color: #E6E6E6;
+  border: 1px solid #e6e6e6;
+  border-bottom-color: #e6e6e6;
   text-align: left;
   border-radius: 4px;
   li {

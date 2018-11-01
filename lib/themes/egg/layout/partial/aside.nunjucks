@@ -1,4 +1,4 @@
-<aside id="mobileAside" class="toc">
+<aside id="mobileAside" class="aside">
   <div class="mobile-menu">
     <ul>
       {{ menu_link() }}
@@ -69,7 +69,7 @@ mobileTrigger.onclick = function(e) {
   if (mobileAside.className.indexOf('mobile-show') === -1) {
     mobileAside.className += ' mobile-show';
   } else {
-    mobileAside.className = 'toc';
+    mobileAside.className = 'aside';
   }
 };
 
