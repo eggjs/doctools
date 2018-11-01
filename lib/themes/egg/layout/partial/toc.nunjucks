@@ -1,0 +1,21 @@
+<div class="toc" id="toc">
+  {{ toc(page.content, { class: 'toc-detail', list_number: true, max_depth: 3}) }}
+</div>
+
+<script>
+
+var tocContainer = document.getElementById('toc');
+var tocDetail = document.getElementsByClassName('toc-detail')[0];
+
+(function(){
+  if(!tocDetail){
+    tocContainer.style.display = 'none';
+  }
+
+  if(tocDetail){
+    document.querySelectorAll('.toc-detail-text').forEach(function(element){
+      element.innerText = element.innerText.replace('# ', '');
+    });
+  }
+})();
+</script>
