@@ -1,4 +1,10 @@
 
+2.7.0 / 2018-11-02
+==================
+
+**features**
+  * [[`c088f89`](http://github.com/eggjs/doctools/commit/c088f89215699d552041ab4f8c2eb38d1b289080)] - feat: lark-style (#35) (Suyi <<thonatos@users.noreply.github.com>>)
+
 2.6.0 / 2018-10-26
 ==================
 
