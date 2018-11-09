@@ -1,4 +1,10 @@
 
+2.7.1 / 2018-11-09
+==================
+
+**fixes**
+  * [[`0b1c3d4`](http://github.com/eggjs/doctools/commit/0b1c3d450a2dcfa7f4522f1b7a0032f772a9b2b2)] - fix: fix aside style (#36) (Suyi <<thonatos@users.noreply.github.com>>)
+
 2.7.0 / 2018-11-02
 ==================
 
