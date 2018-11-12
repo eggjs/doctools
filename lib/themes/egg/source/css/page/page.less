@@ -26,95 +26,81 @@
   height: auto;
   display: flex;
   flex: 1 1;
-  align-items: stretch;  
+  align-items: stretch;
   transition: padding 0.3s linear;
 }
 
 .aside {
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 200px;
-  min-width: 200px;
-  padding-left: 48px;
+  height: 100%;
+  padding: 90px 0 0 48px;
+  background: #fff;
   border-right: 1px solid #e8e8e8;
   font-size: 14px;
+  overflow: scroll;
+  z-index: 1;
+  padding-top: 58px;
+  transition: all 1s;
 }
 
-.content {
-  position: relative;
-  height: auto;
-  flex: auto;
-  width: ~'calc(100% - 200px)';
+.toc {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 240px;
+  height: 100%;
+  padding: 90px 0 48px 0;
+  border-left: 1px solid #e8e8e8;
+  background: #fff;
+  z-index: 1;
 
-  .docs {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  .toc-detail {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
 
-    .doc {
-      flex: 1;
-      min-height: 600px;
-      padding: 32px 80px;
-      transition: width 0.3s linear, padding 0.3s linear;
-      background: #fff;
-
-      article {
-        margin: 0 auto;
-        max-width: 960px;
-      }
+    ol {
+      padding: 0;
     }
 
-    .toc {
-      width: 240px;
-      min-width: 240px;
-      padding: 48px 0;
-      z-index: 1;
-      border-left: 1px solid #e8e8e8;
+    li {
+      list-style-type: none;
+      padding: 3px 10px 3px 16px;
+      line-height: 18px;
+      color: #595959;
 
-      .toc-detail {
-        list-style: none;
-        padding-left: 0;
-        margin: 0;
+      a {
+        font-size: 12px;
+        color: #585858;
+        height: 30px;
+        line-height: 18px;
 
-        ol {
-          padding: 0;
-        }
-
-        li {
-          list-style-type: none;
-          padding: 3px 10px 3px 16px;
-          line-height: 18px;
-          color: #595959;
-
-          a {
-            font-size: 12px;
-            color: #585858;
-            height: 30px;
-            line-height: 18px;
-
-            &:hover {
-              color: #22ab28;
-              transition: 0.3s color;
-            }
-          }
+        &:hover {
+          color: #22ab28;
+          transition: 0.3s color;
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 1136px) {
-  .page-main {
-    .content {
-      width: 100%;
-      .docs {
-        .doc {
-          width: 100%;
-          padding: 32px 16px;
-        }
-        .toc {
-          display: none;
-        }
-      }
+.content {
+  width: 100%;
+  width: 100%;
+  padding: 0 240px 0 200px;
+
+  .doc {
+    min-height: 600px;
+    padding: 32px 80px;
+    transition: width 0.3s linear, padding 0.3s linear;
+    background: #fff;
+
+    article {
+      margin: 0 auto;
+      max-width: 960px;
     }
   }
 }

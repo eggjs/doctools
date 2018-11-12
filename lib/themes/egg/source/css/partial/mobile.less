@@ -2,8 +2,11 @@
   display: none;
 }
 
-@media screen and (min-width: 1136px) and (max-width: 1366px) {
-  .aside {
+@media screen and (min-width: 1136px) and (max-width: 1600px) {
+  .content {
+    padding: 0 0 0 200px;
+  }
+  .toc {
     display: none;
   }
 }
@@ -53,17 +56,22 @@
     display: block;
   }
 
-  aside {
-    position: fixed;
-    top: 56px;
-    right: -200px;
+  .content {
+    padding: 0;
 
-    height: auto;
-    border: 1px solid #eee;
-    overflow-y: scroll;
-    background: #fff;
-    transition: all 1s;
-    z-index: 2;
+    .doc {
+      padding: 32px 24px;
+    }
+  }
+
+  .toc {
+    display: none;
+  }
+
+  aside {
+    border-left: 1px solid #e8e8e8;
+    right: -200px !important;
+    left: auto !important;
 
     .mobile-menu {
       padding-top: 30px;
@@ -82,13 +90,8 @@
   }
 
   aside.mobile-show {
-    position: fixed;
-    top: 56px;
-    right: 0;
-    height: 100%;
-    overflow-y: scroll;
-    transition: all 1s;
-    z-index: 1;
+    right: 0 !important;
+    left: auto !important;
   }
 
   .footer {
