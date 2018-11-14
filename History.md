@@ -1,4 +1,13 @@
 
+2.8.0 / 2018-11-14
+==================
+
+**features**
+  * [[`3c5a967`](http://github.com/eggjs/doctools/commit/3c5a9677f495b7612b65df6a6d0367354b8ca748)] - feat: add hotjar (#39) (Haoliang Gao <<sakura9515@gmail.com>>)
+
+**others**
+  * [[`7c89a84`](http://github.com/eggjs/doctools/commit/7c89a849b9925ea5d956e1ffd1dbebb1b4eee21c)] - 2.7.4 (Suyi Thonatos.Yang <<thonatos.yang@gmail.com>>),
+
 2.7.1 / 2018-11-09
 ==================
 
