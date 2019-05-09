@@ -136,7 +136,7 @@ describe('test/build.test.js', () => {
     before(function* () {
       yield fs.symlink(path.join(process.cwd(), 'node_modules'), nodeModules);
       yield coffee.fork(bin, [ 'build', '--external', repo ], { cwd })
-        // .debug()
+      // .debug()
         .expect('code', 0)
         .end();
     });
@@ -166,8 +166,9 @@ describe('test/build.test.js', () => {
 
     it('should exit 1', function* () {
       yield coffee.fork(bin, [ 'build' ], { cwd })
-        .debug()
-        .expect('stderr', /Cannot find module .*test[\/\\]fixtures[\/\\]error/)
+        // .debug()
+        // .expect('stderr', /Cannot find module .*test[\/\\]fixtures[\/\\]error/)
+        .expect('stderr', /NestedError\: Cannot glob `\*\*\/\*`/)
         .expect('code', 1)
         .end();
     });
