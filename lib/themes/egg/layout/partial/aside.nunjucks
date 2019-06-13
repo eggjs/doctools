@@ -47,10 +47,10 @@ mobileAside.onclick = function(e) {
   const targetId = e.target.id;
   if (targetId && (targetId.indexOf('title-') > -1 || targetId.indexOf('collapse-icon-') > -1)) {
     const title = targetId.replace('title-', '').replace('collapse-icon-', '');
-    try { 
-      // the the browser may have no localStroage or JSON.parse may throw exception.
+    try {
+      // the browser may have no localStorage or JSON.parse may throw exception.
       const menuInfo = JSON.parse(window.localStorage.getItem('menuInfo'));
-        
+
       // current menu status
       const curClosed = menuInfo[title] ? menuInfo[title].closed : false; // default false
 
@@ -76,8 +76,8 @@ mobileTrigger.onclick = function(e) {
 (function() {
   // save data to localStorage because the page will refresh when user change the url.
   let menuInfo;
-  try { 
-    // the the browser may have no localStroage or JSON.parse may throw exception.
+  try {
+    // the browser may have no localStorage or JSON.parse may throw exception.
     menuInfo = JSON.parse(window.localStorage.getItem('menuInfo'));
     if (!menuInfo) {
       menuInfo = {};
