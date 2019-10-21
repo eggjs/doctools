@@ -53,7 +53,7 @@
     "pkgfiles": "egg-bin pkgfiles"
   },
   "ci": {
-    "version": "6, 8, 10",
+    "version": "8, 10",
     "license": true
   },
   "repository": {
