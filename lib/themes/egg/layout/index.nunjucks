@@ -14,6 +14,12 @@
         <a class="btn btn-primary" href="{{ index_link('/intro/quickstart.html') }}">{{ __('index.getstart') }}</a>
         <a class="btn btn-secondary" href="https://github.com/eggjs/egg/">GitHub</a>
       </p>
+      {% if site.data.promo_link %}
+      <p class="banner-promo-link">
+        <img src="{{ site.data.promo_link.logo }}" />
+        <a href="{{ site.data.promo_link.link  }}">{{ site.data.promo_link.title }} &gt;</a>
+      </p>
+      {% endif %}
     </div>
   </div>
 </div>
