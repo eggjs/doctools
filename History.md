@@ -1,3 +1,16 @@
+2.9.0 / 2019-10-21
+==================
+
+**features**
+  * [[`ac9c32b`](http://github.com/eggjs/doctools/commit/ac9c32b7c722bab8eae117122cd73a6a7e1a14b4)] - feat: add promo link (#49) (Haoliang Gao <<sakura9515@gmail.com>>)
+  * [[`82072a8`](http://github.com/eggjs/doctools/commit/82072a840bbaac6ee61f2776b6074bc4de844930)] - feat: :sparkles: auto switch language(#43) (Jeff <<jeff.tian@outlook.com>>)
+  * [[`50aa6be`](http://github.com/eggjs/doctools/commit/50aa6bed61007a77a4e95087c2d280aa3665c3d3)] - feat: add the support for Windows (#46) (Suyi <<thonatos@users.noreply.github.com>>)
+  * [[`2ac6f77`](http://github.com/eggjs/doctools/commit/2ac6f7707a248d2722497936896ab9ce5bc45b84)] - feat: change html bg color (#41) (Suyi <<thonatos@users.noreply.github.com>>)
+
+**fixes**
+  * [[`ef494d9`](http://github.com/eggjs/doctools/commit/ef494d971cfc9b3340ab87fcdf73fedd16850980)] - fix: remove the folder and update packages (#44) (Maledong <<maledong_github@outlook.com>>)
+  * [[`01ff30b`](http://github.com/eggjs/doctools/commit/01ff30be095481ca6fadb08b93841ba79c64803f)] - fix: resolve jsdoc binary path (#47) (Suyi <<thonatos@users.noreply.github.com>>)
+  * [[`a74c640`](http://github.com/eggjs/doctools/commit/a74c640fd3ff32b714ff10f73892fb7df9a95c77)] - fix: toc scroll (#42) (Suyi <<thonatos@users.noreply.github.com>>)
 
 2.8.0 / 2018-11-14
 ==================
@@ -139,4 +152,3 @@
 ==================
 
 First version
-
