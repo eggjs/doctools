@@ -1,3 +1,9 @@
+2.9.1 / 2020-10-28
+==================
+
+**fixes**
+  * [[`ac9c32b`](http://github.com/eggjs/doctools/commit/ac9c32b7c722bab8eae117122cd73a6a7e1a14b4)] - fix: banner-promo-style (#50) (wending.lwd <<wending.lwd@alibaba-inc.com>>)
+
 2.9.0 / 2019-10-21
 ==================
 
