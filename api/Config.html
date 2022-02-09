@@ -1,0 +1,4584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Config - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2>
+  <h3>Egg</h3>
+  <ul>
+    <li>
+      <a href="Egg.html">Egg</a>
+      <a href="Application.html">Application</a>
+      <a href="Context.html">Context</a>
+      <a href="Request.html">Request</a>
+      <a href="Response.html">Response</a>
+    </li>
+  </ul>
+  <h3>Classes</h3><ul><li><a href="AppInfo.html">AppInfo</a><ul class='members'><li data-type='member'><a href="AppInfo.html#baseDir">baseDir</a></li><li data-type='member'><a href="AppInfo.html#env">env</a></li><li data-type='member'><a href="AppInfo.html#HOME">HOME</a></li><li data-type='member'><a href="AppInfo.html#name">name</a></li><li data-type='member'><a href="AppInfo.html#pkg">pkg</a></li><li data-type='member'><a href="AppInfo.html#root">root</a></li><li data-type='member'><a href="AppInfo.html#scope">scope</a></li></ul></li><li><a href="BaseContextClass.html">BaseContextClass</a><ul class='members'><li data-type='member'><a href="BaseContextClass.html#app">app</a></li><li data-type='member'><a href="BaseContextClass.html#config">config</a></li><li data-type='member'><a href="BaseContextClass.html#ctx">ctx</a></li><li data-type='member'><a href="BaseContextClass.html#service">service</a></li></ul></li><li><a href="Config.html">Config</a><ul class='members'><li data-type='member'><a href="Config.html#baseDir">baseDir</a></li><li data-type='member'><a href="Config.html#bodyParser">bodyParser</a></li><li data-type='member'><a href="Config.html#cluster">cluster</a></li><li data-type='member'><a href="Config.html#confusedConfigurations">confusedConfigurations</a></li><li data-type='member'><a href="Config.html#dump">dump</a></li><li data-type='member'><a href="Config.html#env">env</a></li><li data-type='member'><a href="Config.html#HOME">HOME</a></li><li data-type='member'><a href="Config.html#hostHeaders">hostHeaders</a></li><li data-type='member'><a href="Config.html#httpclient">httpclient</a></li><li data-type='member'><a href="Config.html#i18n">i18n</a></li><li data-type='member'><a href="Config.html#ipHeaders">ipHeaders</a></li><li data-type='member'><a href="Config.html#jsonp">jsonp</a></li><li data-type='member'><a href="Config.html#keys">keys</a></li><li data-type='member'><a href="Config.html#logger">logger</a></li><li data-type='member'><a href="Config.html#logrotator">logrotator</a></li><li data-type='member'><a href="Config.html#maxIpsCount">maxIpsCount</a></li><li data-type='member'><a href="Config.html#maxProxyCount">maxProxyCount</a></li><li data-type='member'><a href="Config.html#middleware">middleware</a></li><li data-type='member'><a href="Config.html#multipart">multipart</a></li><li data-type='member'><a href="Config.html#name">name</a></li><li data-type='member'><a href="Config.html#notfound">notfound</a></li><li data-type='member'><a href="Config.html#pkg">pkg</a></li><li data-type='member'><a href="Config.html#protocolHeaders">protocolHeaders</a></li><li data-type='member'><a href="Config.html#proxy">proxy</a></li><li data-type='member'><a href="Config.html#rundir">rundir</a></li><li data-type='member'><a href="Config.html#security">security</a></li><li data-type='member'><a href="Config.html#siteFile">siteFile</a></li><li data-type='member'><a href="Config.html#static">static</a></li><li data-type='member'><a href="Config.html#view">view</a></li><li data-type='member'><a href="Config.html#watcher">watcher</a></li><li data-type='member'><a href="Config.html#.workerStartTimeout">workerStartTimeout</a></li></ul></li><li><a href="ContextLoader.html">ContextLoader</a><ul class='members'><li data-type='member'><a href="ContextLoader.html#load">load()</a></li><li data-type='member'><a href="ContextLoader.html#parse">parse()</a></li></ul></li><li><a href="Controller.html">Controller</a><ul class='members'><li data-type='member'><a href="Controller.html#app">app</a></li><li data-type='member'><a href="Controller.html#config">config</a></li><li data-type='member'><a href="Controller.html#ctx">ctx</a></li><li data-type='member'><a href="Controller.html#service">service</a></li></ul></li><li><a href="EggCore.html">EggCore</a><ul class='members'><li data-type='member'><a href="EggCore.html#BaseContextClass">BaseContextClass</a></li><li data-type='member'><a href="EggCore.html#baseDir">baseDir</a></li><li data-type='member'><a href="EggCore.html#config">config</a></li><li data-type='member'><a href="EggCore.html#Controller">Controller</a></li><li data-type='member'><a href="EggCore.html#deprecate">deprecate</a></li><li data-type='member'><a href="EggCore.html#loader">loader</a></li><li data-type='member'><a href="EggCore.html#name">name</a></li><li data-type='member'><a href="EggCore.html#plugins">plugins</a></li><li data-type='member'><a href="EggCore.html#router">router</a></li><li data-type='member'><a href="EggCore.html#Service">Service</a></li><li data-type='member'><a href="EggCore.html#type">type</a></li><li data-type='member'><a href="EggCore.html#beforeClose">beforeClose()</a></li><li data-type='member'><a href="EggCore.html#beforeStart">beforeStart()</a></li><li data-type='member'><a href="EggCore.html#close">close()</a></li><li data-type='member'><a href="EggCore.html#toAsyncFunction">toAsyncFunction()</a></li><li data-type='member'><a href="EggCore.html#toPromise">toPromise()</a></li><li data-type='member'><a href="EggCore.html#url">url()</a></li><li data-type='member'><a href="EggCore.html#use">use()</a></li></ul></li><li><a href="EggLoader.html">EggLoader</a><ul class='members'><li data-type='member'><a href="EggLoader.html#appInfo">appInfo</a></li><li data-type='member'><a href="EggLoader.html#ContextLoader">ContextLoader</a></li><li data-type='member'><a href="EggLoader.html#eggPaths">eggPaths</a></li><li data-type='member'><a href="EggLoader.html#FileLoader">FileLoader</a></li><li data-type='member'><a href="EggLoader.html#pkg">pkg</a></li><li data-type='member'><a href="EggLoader.html#plugins">plugins</a></li><li data-type='member'><a href="EggLoader.html#serverEnv">serverEnv</a></li><li data-type='member'><a href="EggLoader.html#serverScope">serverScope</a></li><li data-type='member'><a href="EggLoader.html#getAppInfo">getAppInfo()</a></li><li data-type='member'><a href="EggLoader.html#getHomedir">getHomedir()</a></li><li data-type='member'><a href="EggLoader.html#getLoadUnits">getLoadUnits()</a></li><li data-type='member'><a href="EggLoader.html#loadAgentExtend">loadAgentExtend()</a></li><li data-type='member'><a href="EggLoader.html#loadApplicationExtend">loadApplicationExtend()</a></li><li data-type='member'><a href="EggLoader.html#loadConfig">loadConfig()</a></li><li data-type='member'><a href="EggLoader.html#loadContextExtend">loadContextExtend()</a></li><li data-type='member'><a href="EggLoader.html#loadFile">loadFile()</a></li><li data-type='member'><a href="EggLoader.html#loadHelperExtend">loadHelperExtend()</a></li><li data-type='member'><a href="EggLoader.html#loadMiddleware">loadMiddleware()</a></li><li data-type='member'><a href="EggLoader.html#loadPlugin">loadPlugin()</a></li><li data-type='member'><a href="EggLoader.html#loadRequestExtend">loadRequestExtend()</a></li><li data-type='member'><a href="EggLoader.html#loadResponseExtend">loadResponseExtend()</a></li><li data-type='member'><a href="EggLoader.html#loadRouter">loadRouter()</a></li><li data-type='member'><a href="EggLoader.html#loadService">loadService()</a></li><li data-type='member'><a href="EggLoader.html#loadToApp">loadToApp()</a></li><li data-type='member'><a href="EggLoader.html#loadToContext">loadToContext()</a></li></ul></li><li><a href="FileLoader.html">FileLoader</a><ul class='members'><li data-type='member'><a href="FileLoader.html#load">load()</a></li><li data-type='member'><a href="FileLoader.html#parse">parse()</a></li></ul></li><li><a href="I18n.html">I18n</a></li><li><a href="Router.html">Router</a><ul class='members'><li data-type='member'><a href="Router.html#register">register()</a></li><li data-type='member'><a href="Router.html#resources">resources()</a></li><li data-type='member'><a href="Router.html#url">url()</a></li></ul></li><li><a href="Service.html">Service</a><ul class='members'><li data-type='member'><a href="Service.html#app">app</a></li><li data-type='member'><a href="Service.html#config">config</a></li><li data-type='member'><a href="Service.html#ctx">ctx</a></li><li data-type='member'><a href="Service.html#service">service</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="Egg.html">Egg</a><ul class='members'><li data-type='member'><a href="Egg.html#Agent">Agent</a></li><li data-type='member'><a href="Egg.html#AgentWorkerLoader">AgentWorkerLoader</a></li><li data-type='member'><a href="Egg.html#Application">Application</a></li><li data-type='member'><a href="Egg.html#AppWorkerLoader">AppWorkerLoader</a></li><li data-type='member'><a href="Egg.html#BaseContextClass">BaseContextClass</a></li><li data-type='member'><a href="Egg.html#Controller">Controller</a></li><li data-type='member'><a href="Egg.html#Service">Service</a></li><li data-type='member'><a href="Egg.html#Subscription">Subscription</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Config</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        Config
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+
+    <h4 class="name" id="Config"><span class="type-signature"></span>new Config<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>The configuration of egg application, can be access by <code>app.config</code></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line6">line 6</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id=".workerStartTimeout"><span class="type-signature">(static) </span>workerStartTimeout<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    <p>emit <code>startTimeout</code> if worker don't ready after <code>workerStartTimeout</code> ms</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line303">line 303</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="baseDir"><span class="type-signature"></span>baseDir<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    <p>The current directory of the application</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line105">line 105</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li>{appInfo#baseDir}</li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="bodyParser"><span class="type-signature"></span>bodyParser<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>The option of <code>bodyParser</code> middleware</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>enable</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>enable bodyParser or not, default is true</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ignore</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">RegExp</span>
+|
+
+<span class="param-type">function</span>
+|
+
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>won't parse request body when url path hit ignore pattern, can not set <code>ignore</code> when <code>match</code> presented</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>match</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">RegExp</span>
+|
+
+<span class="param-type">function</span>
+|
+
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>will parse request body only when url path hit match pattern</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>encoding</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>body's encoding type，default is utf8</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>formLimit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>limit of the urlencoded body. If the body ends up being larger than this limit, a 413 error code is returned. Default is 100kb</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>jsonLimit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>limit of the json body, default is 100kb</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>strict</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>when set to true, JSON parser will only accept arrays and objects. Default is true</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>queryString.arrayLimit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>urlencoded body array's max length, default is 100</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>queryString.depth</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>urlencoded body object's max depth, default is 5</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>queryString.parameterLimit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>urlencoded body maximum parameters, default is 1000</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line191">line 191</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="cluster"><span class="type-signature"></span>cluster<span class="type-signature"> :Object</span></h4>
+
+
+
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>listen</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>listen options, see <a href="https://nodejs.org/api/http.html#http_server_listen_port_hostname_backlog_callback">https://nodejs.org/api/http.html#http_server_listen_port_hostname_backlog_callback</a></p>
+                <h6>Properties</h6>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>path</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>set a unix sock path when server listen</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>port</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>set a port when server listen</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>hostname</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>set a hostname binding server when server listen</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line309">line 309</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="confusedConfigurations"><span class="type-signature"></span>confusedConfigurations<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    <p>configurations are confused to users
+{
+[unexpectedKey]: [expectedKey],
+}</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line145">line 145</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="dump"><span class="type-signature"></span>dump<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>dump config</p>
+<p>It will ignore special keys when dumpConfig</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>ignore</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Set</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>keys to ignore</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line129">line 129</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="env"><span class="type-signature"></span>env<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    <p>The environment of egg</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line16">line 16</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li>{appInfo#env}</li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="HOME"><span class="type-signature"></span>HOME<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    <p>The current HOME directory</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line113">line 113</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li>{appInfo#HOME}</li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="hostHeaders"><span class="type-signature"></span>hostHeaders<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    <p>Detect request' host from specified headers, not case-sensitive.
+Only worked when config.proxy set to true.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line88">line 88</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="httpclient"><span class="type-signature"></span>httpclient<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>The option for httpclient</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>enableDNSCache</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Enable DNS lookup from local cache or not, default is false.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>request.timeout</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>httpclient request default timeout, default is 5000 ms.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>httpAgent.keepAlive</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Enable http agent keepalive or not, default is true</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>httpAgent.freeSocketKeepAliveTimeout</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>http agent socket keepalive max free time, default is 4000 ms.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>httpAgent.maxSockets</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>http agent max socket number of one host, default is <code>Number.MAX_SAFE_INTEGER</code> @ses https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>httpAgent.maxFreeSockets</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>http agent max free socket number of one host, default is 256.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>httpsAgent.keepAlive</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Enable https agent keepalive or not, default is true</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>httpsAgent.freeSocketKeepAliveTimeout</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>httpss agent socket keepalive max free time, default is 4000 ms.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>httpsAgent.maxSockets</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>https agent max socket number of one host, default is <code>Number.MAX_SAFE_INTEGER</code> @ses https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>httpsAgent.maxFreeSockets</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>https agent max free socket number of one host, default is 256.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line252">line 252</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="i18n"><span class="type-signature"></span>i18n<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>I18n options</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>defaultLocale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>默认语言是美式英语，毕竟支持多语言，基本都是以英语为母板</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dirs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>多语言资源文件存放路径，不建议修改</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>queryField</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>设置当前语言的 query 参数字段名，默认通过 <code>query.locale</code> 获取
+如果你想修改为 <code>query.lang</code>，那么请通过修改此配置实现</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>cookieField</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>如果当前请求用户语言有变化，都会设置到 cookie 中保持着，
+默认是存储在key 为 locale 的 cookie 中</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>cookieMaxAge</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>cookie 默认 <code>1y</code> 一年后过期，
+如果设置为 Number，则单位为 ms</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg-i18n_config_config.default.js.html">node_modules/egg-i18n/config/config.default.js</a>, <a href="node_modules_egg-i18n_config_config.default.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="ipHeaders"><span class="type-signature"></span>ipHeaders<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    <p>Detect request' ip from specified headers, not case-sensitive.
+Only worked when config.proxy set to true.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line79">line 79</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="jsonp"><span class="type-signature"></span>jsonp<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>jsonp options</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>jsonp callback method key, default to <code>['_callback', 'callback' ]</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>limit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>callback method name's max length, default to <code>50</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>csrf</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>enable csrf check or not. default to false</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>whiteList</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">RegExp</span>
+|
+
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>referrer white list</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg-jsonp_config_config.default.js.html">node_modules/egg-jsonp/config/config.default.js</a>, <a href="node_modules_egg-jsonp_config_config.default.js.html#line3">line 3</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="keys"><span class="type-signature"></span>keys<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    <p>The key that signing cookies. It can contain multiple keys seperated by <code>,</code>.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line32">line 32</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://eggjs.org/zh-cn/basics/controller.html#cookie-%E7%A7%98%E9%92%A5">https://eggjs.org/zh-cn/basics/controller.html#cookie-秘钥</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="logger"><span class="type-signature"></span>logger<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>logger options</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>dir</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>directory of log files</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>encoding</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>log file encloding, defaults to utf8</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>level</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>default log level, could be: DEBUG, INFO, WARN, ERROR or NONE, defaults to INFO in production</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>consoleLevel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>log level of stdout, defaults to INFO in local serverEnv, defaults to WARN in unittest, defaults to NONE elsewise</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>disableConsoleAfterReady</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>disable logger console after app ready. defaults to <code>false</code> on local and unittest env, others is <code>true</code>.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>outputJSON</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>log as JSON or not, defaults to false</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>buffer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>if enabled, flush logs to disk at a certain frequency to improve performance, defaults to true</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorLogName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>file name of errorLogger</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>coreLogName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>file name of coreLogger</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>agentLogName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>file name of agent worker log</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>coreLogger</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>custom config of coreLogger</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line220">line 220</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="logrotator"><span class="type-signature"></span>logrotator<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>logrotator options</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>filesRotateByHour</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>list of files that will be rotated by hour</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>filesRotateBySize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>list of files that will be rotated by size</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>maxFileSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Max file size to judge if any file need rotate</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>maxFiles</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>pieces rotate by size</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>maxDays</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>keep max days log files, default is <code>31</code>. Set <code>0</code> to keep all logs.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>rotateDuration</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>time interval to judge if any file need rotate</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>maxDays</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>keep max days log files</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg-logrotator_config_config.default.js.html">node_modules/egg-logrotator/config/config.default.js</a>, <a href="node_modules_egg-logrotator_config_config.default.js.html#line3">line 3</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="maxIpsCount"><span class="type-signature"></span>maxIpsCount<span class="type-signature"> :Integer</span></h4>
+
+
+
+
+<div class="description">
+    <p>max ips read from proxy ip header, default to 0 (means infinity)
+to prevent users from forging client ip addresses via x-forwarded-for</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.20.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line50">line 50</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://github.com/koajs/koa/blob/master/docs/api/request.md#requestips">https://github.com/koajs/koa/blob/master/docs/api/request.md#requestips</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="maxProxyCount"><span class="type-signature"></span>maxProxyCount<span class="type-signature"> :Integer</span></h4>
+
+
+
+
+<div class="description">
+    <p>please use maxIpsCount instead</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.19.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <dt class="important tag-deprecated">Deprecated:</dt><dd class="yes-def tag-deprecated"><ul class="dummy"><li>Yes</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line61">line 61</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="middleware"><span class="type-signature"></span>middleware<span class="type-signature"> :Array</span></h4>
+
+
+
+
+<div class="description">
+    <p>core enable middlewares</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line291">line 291</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="multipart"><span class="type-signature"></span>multipart<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>multipart parser options</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>autoFields</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Auto set fields to parts, default is <code>false</code>.
+If set true，all fields will be auto handle and can acces by <code>parts.fields</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>defaultCharset</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Default charset encoding, don't change it before you real know about it</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fieldNameSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Integer</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Max field name size (in bytes), default is <code>100</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fieldSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Integer</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Max field value size (in bytes), default is <code>100kb</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fields</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Integer</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Max number of non-file fields, default is <code>10</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fileSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Integer</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Max file size (in bytes), default is <code>10mb</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>files</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Integer</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Max number of file fields, default is <code>10</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>whitelist</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The white ext file names, default is <code>null</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fileExtensions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Add more ext file names to the <code>whitelist</code>, default is <code>[]</code></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg-multipart_config_config.default.js.html">node_modules/egg-multipart/config/config.default.js</a>, <a href="node_modules_egg-multipart_config_config.default.js.html#line3">line 3</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="name"><span class="type-signature"></span>name<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    <p>The name of the application</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line24">line 24</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li>{appInfo#name}</li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="notfound"><span class="type-signature"></span>notfound<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>The option of <code>notfound</code> middleware</p>
+<p>It will return page or json depend on negotiation when 404,
+If pageUrl is set, it will redirect to the page.</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pageUrl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the 404 page url</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line162">line 162</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="pkg"><span class="type-signature"></span>pkg<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    <p>package.json</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line97">line 97</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li>{appInfo#pkg}</li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="protocolHeaders"><span class="type-signature"></span>protocolHeaders<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    <p>Detect request's protocol from specified headers, not case-sensitive.
+Only worked when config.proxy set to true.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line70">line 70</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="proxy"><span class="type-signature"></span>proxy<span class="type-signature"> :Boolean</span></h4>
+
+
+
+
+<div class="description">
+    <p>Whether application deployed after a reverse proxy,
+when true proxy header fields will be trusted</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line41">line 41</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="rundir"><span class="type-signature"></span>rundir<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    <p>The directory of server running. You can find <code>application_config.json</code> under it that is dumpped from <code>app.config</code>.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line121">line 121</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="security"><span class="type-signature"></span>security<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>security options</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>defaultMiddleware</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>default open security middleware</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>csrf</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>whether defend csrf attack</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>xframe</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>whether enable X-Frame-Options response header, default SAMEORIGIN</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>hsts</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>whether enable Strict-Transport-Security response header, default is one year</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>methodnoallow</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>whether enable Http Method filter</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>noopen</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>whether enable IE automaticlly download open</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>nosniff</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>whether enable IE8 automaticlly dedect mime</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>xssProtection</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>whether enable IE8 XSS Filter, default is open</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>csp</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>content security policy config</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>domainWhiteList</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>domain white list</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>protocolWhiteList</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>protocal white list</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg-security_config_config.default.js.html">node_modules/egg-security/config/config.default.js</a>, <a href="node_modules_egg-security_config_config.default.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="siteFile"><span class="type-signature"></span>siteFile<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    <p>The option of <code>siteFile</code> middleware</p>
+<p>You can map some files using this options, it will response immdiately when matching.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg_config_config.default.js.html">node_modules/egg/config/config.default.js</a>, <a href="node_modules_egg_config_config.default.js.html#line175">line 175</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// specific app's favicon, => '/favicon.ico': 'https://eggjs.org/favicon.ico',
+config.siteFile = {
+  '/favicon.ico': 'https://eggjs.org/favicon.ico',
+};</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="static"><span class="type-signature"></span>static<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>Static file serve</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>prefix</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p><code>/public/</code> by default</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dir</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>static files store dir, <code>${baseDir}/app/public</code> by default</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>maxAge</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>cache max age, default is 0</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg-static_config_config.default.js.html">node_modules/egg-static/config/config.default.js</a>, <a href="node_modules_egg-static_config_config.default.js.html#line8">line 8</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://github.com/koajs/static-cache">https://github.com/koajs/static-cache</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="view"><span class="type-signature"></span>view<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>view default config</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>root</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    ${baseDir}/app/view
+                
+                </td>
+            
+
+            <td class="description last"><p>give a path to find the file, you can specify multiple path with <code>,</code> delimiter</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>cache</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"><p>whether cache the file's path</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>defaultExtension</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>defaultExtension can be added automatically when there is no extension  when call <code>ctx.render</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>defaultViewEngine</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>set the default view engine if you don't want specify the viewEngine every request.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>mapping</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>map the file extension to view engine, such as <code>{ '.ejs': 'ejs' }</code></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg-view_config_config.default.js.html">node_modules/egg-view/config/config.default.js</a>, <a href="node_modules_egg-view_config_config.default.js.html#line6">line 6</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="watcher"><span class="type-signature"></span>watcher<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>watcher options</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>event source type</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_egg-watcher_config_config.default.js.html">node_modules/egg-watcher/config/config.default.js</a>, <a href="node_modules_egg-watcher_config_config.default.js.html#line5">line 5</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Wed Feb 09 2022 16:41:54 GMT+0800 (中国标准时间) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

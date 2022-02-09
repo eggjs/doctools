@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Router - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2>
+  <h3>Egg</h3>
+  <ul>
+    <li>
+      <a href="Egg.html">Egg</a>
+      <a href="Application.html">Application</a>
+      <a href="Context.html">Context</a>
+      <a href="Request.html">Request</a>
+      <a href="Response.html">Response</a>
+    </li>
+  </ul>
+  <h3>Classes</h3><ul><li><a href="AppInfo.html">AppInfo</a><ul class='members'><li data-type='member'><a href="AppInfo.html#baseDir">baseDir</a></li><li data-type='member'><a href="AppInfo.html#env">env</a></li><li data-type='member'><a href="AppInfo.html#HOME">HOME</a></li><li data-type='member'><a href="AppInfo.html#name">name</a></li><li data-type='member'><a href="AppInfo.html#pkg">pkg</a></li><li data-type='member'><a href="AppInfo.html#root">root</a></li><li data-type='member'><a href="AppInfo.html#scope">scope</a></li></ul></li><li><a href="BaseContextClass.html">BaseContextClass</a><ul class='members'><li data-type='member'><a href="BaseContextClass.html#app">app</a></li><li data-type='member'><a href="BaseContextClass.html#config">config</a></li><li data-type='member'><a href="BaseContextClass.html#ctx">ctx</a></li><li data-type='member'><a href="BaseContextClass.html#service">service</a></li></ul></li><li><a href="Config.html">Config</a><ul class='members'><li data-type='member'><a href="Config.html#baseDir">baseDir</a></li><li data-type='member'><a href="Config.html#bodyParser">bodyParser</a></li><li data-type='member'><a href="Config.html#cluster">cluster</a></li><li data-type='member'><a href="Config.html#confusedConfigurations">confusedConfigurations</a></li><li data-type='member'><a href="Config.html#dump">dump</a></li><li data-type='member'><a href="Config.html#env">env</a></li><li data-type='member'><a href="Config.html#HOME">HOME</a></li><li data-type='member'><a href="Config.html#hostHeaders">hostHeaders</a></li><li data-type='member'><a href="Config.html#httpclient">httpclient</a></li><li data-type='member'><a href="Config.html#i18n">i18n</a></li><li data-type='member'><a href="Config.html#ipHeaders">ipHeaders</a></li><li data-type='member'><a href="Config.html#jsonp">jsonp</a></li><li data-type='member'><a href="Config.html#keys">keys</a></li><li data-type='member'><a href="Config.html#logger">logger</a></li><li data-type='member'><a href="Config.html#logrotator">logrotator</a></li><li data-type='member'><a href="Config.html#maxIpsCount">maxIpsCount</a></li><li data-type='member'><a href="Config.html#maxProxyCount">maxProxyCount</a></li><li data-type='member'><a href="Config.html#middleware">middleware</a></li><li data-type='member'><a href="Config.html#multipart">multipart</a></li><li data-type='member'><a href="Config.html#name">name</a></li><li data-type='member'><a href="Config.html#notfound">notfound</a></li><li data-type='member'><a href="Config.html#pkg">pkg</a></li><li data-type='member'><a href="Config.html#protocolHeaders">protocolHeaders</a></li><li data-type='member'><a href="Config.html#proxy">proxy</a></li><li data-type='member'><a href="Config.html#rundir">rundir</a></li><li data-type='member'><a href="Config.html#security">security</a></li><li data-type='member'><a href="Config.html#siteFile">siteFile</a></li><li data-type='member'><a href="Config.html#static">static</a></li><li data-type='member'><a href="Config.html#view">view</a></li><li data-type='member'><a href="Config.html#watcher">watcher</a></li><li data-type='member'><a href="Config.html#.workerStartTimeout">workerStartTimeout</a></li></ul></li><li><a href="ContextLoader.html">ContextLoader</a><ul class='members'><li data-type='member'><a href="ContextLoader.html#load">load()</a></li><li data-type='member'><a href="ContextLoader.html#parse">parse()</a></li></ul></li><li><a href="Controller.html">Controller</a><ul class='members'><li data-type='member'><a href="Controller.html#app">app</a></li><li data-type='member'><a href="Controller.html#config">config</a></li><li data-type='member'><a href="Controller.html#ctx">ctx</a></li><li data-type='member'><a href="Controller.html#service">service</a></li></ul></li><li><a href="EggCore.html">EggCore</a><ul class='members'><li data-type='member'><a href="EggCore.html#BaseContextClass">BaseContextClass</a></li><li data-type='member'><a href="EggCore.html#baseDir">baseDir</a></li><li data-type='member'><a href="EggCore.html#config">config</a></li><li data-type='member'><a href="EggCore.html#Controller">Controller</a></li><li data-type='member'><a href="EggCore.html#deprecate">deprecate</a></li><li data-type='member'><a href="EggCore.html#loader">loader</a></li><li data-type='member'><a href="EggCore.html#name">name</a></li><li data-type='member'><a href="EggCore.html#plugins">plugins</a></li><li data-type='member'><a href="EggCore.html#router">router</a></li><li data-type='member'><a href="EggCore.html#Service">Service</a></li><li data-type='member'><a href="EggCore.html#type">type</a></li><li data-type='member'><a href="EggCore.html#beforeClose">beforeClose()</a></li><li data-type='member'><a href="EggCore.html#beforeStart">beforeStart()</a></li><li data-type='member'><a href="EggCore.html#close">close()</a></li><li data-type='member'><a href="EggCore.html#toAsyncFunction">toAsyncFunction()</a></li><li data-type='member'><a href="EggCore.html#toPromise">toPromise()</a></li><li data-type='member'><a href="EggCore.html#url">url()</a></li><li data-type='member'><a href="EggCore.html#use">use()</a></li></ul></li><li><a href="EggLoader.html">EggLoader</a><ul class='members'><li data-type='member'><a href="EggLoader.html#appInfo">appInfo</a></li><li data-type='member'><a href="EggLoader.html#ContextLoader">ContextLoader</a></li><li data-type='member'><a href="EggLoader.html#eggPaths">eggPaths</a></li><li data-type='member'><a href="EggLoader.html#FileLoader">FileLoader</a></li><li data-type='member'><a href="EggLoader.html#pkg">pkg</a></li><li data-type='member'><a href="EggLoader.html#plugins">plugins</a></li><li data-type='member'><a href="EggLoader.html#serverEnv">serverEnv</a></li><li data-type='member'><a href="EggLoader.html#serverScope">serverScope</a></li><li data-type='member'><a href="EggLoader.html#getAppInfo">getAppInfo()</a></li><li data-type='member'><a href="EggLoader.html#getHomedir">getHomedir()</a></li><li data-type='member'><a href="EggLoader.html#getLoadUnits">getLoadUnits()</a></li><li data-type='member'><a href="EggLoader.html#loadAgentExtend">loadAgentExtend()</a></li><li data-type='member'><a href="EggLoader.html#loadApplicationExtend">loadApplicationExtend()</a></li><li data-type='member'><a href="EggLoader.html#loadConfig">loadConfig()</a></li><li data-type='member'><a href="EggLoader.html#loadContextExtend">loadContextExtend()</a></li><li data-type='member'><a href="EggLoader.html#loadFile">loadFile()</a></li><li data-type='member'><a href="EggLoader.html#loadHelperExtend">loadHelperExtend()</a></li><li data-type='member'><a href="EggLoader.html#loadMiddleware">loadMiddleware()</a></li><li data-type='member'><a href="EggLoader.html#loadPlugin">loadPlugin()</a></li><li data-type='member'><a href="EggLoader.html#loadRequestExtend">loadRequestExtend()</a></li><li data-type='member'><a href="EggLoader.html#loadResponseExtend">loadResponseExtend()</a></li><li data-type='member'><a href="EggLoader.html#loadRouter">loadRouter()</a></li><li data-type='member'><a href="EggLoader.html#loadService">loadService()</a></li><li data-type='member'><a href="EggLoader.html#loadToApp">loadToApp()</a></li><li data-type='member'><a href="EggLoader.html#loadToContext">loadToContext()</a></li></ul></li><li><a href="FileLoader.html">FileLoader</a><ul class='members'><li data-type='member'><a href="FileLoader.html#load">load()</a></li><li data-type='member'><a href="FileLoader.html#parse">parse()</a></li></ul></li><li><a href="I18n.html">I18n</a></li><li><a href="Router.html">Router</a><ul class='members'><li data-type='member'><a href="Router.html#register">register()</a></li><li data-type='member'><a href="Router.html#resources">resources()</a></li><li data-type='member'><a href="Router.html#url">url()</a></li></ul></li><li><a href="Service.html">Service</a><ul class='members'><li data-type='member'><a href="Service.html#app">app</a></li><li data-type='member'><a href="Service.html#config">config</a></li><li data-type='member'><a href="Service.html#ctx">ctx</a></li><li data-type='member'><a href="Service.html#service">service</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="Egg.html">Egg</a><ul class='members'><li data-type='member'><a href="Egg.html#Agent">Agent</a></li><li data-type='member'><a href="Egg.html#AgentWorkerLoader">AgentWorkerLoader</a></li><li data-type='member'><a href="Egg.html#Application">Application</a></li><li data-type='member'><a href="Egg.html#AppWorkerLoader">AppWorkerLoader</a></li><li data-type='member'><a href="Egg.html#BaseContextClass">BaseContextClass</a></li><li data-type='member'><a href="Egg.html#Controller">Controller</a></li><li data-type='member'><a href="Egg.html#Service">Service</a></li><li data-type='member'><a href="Egg.html#Subscription">Subscription</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Router</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        Router
+        </h2>
+        
+            <div class="class-description"><p>Extend <a href="https://github.com/alexmingoia/koa-router">https://github.com/alexmingoia/koa-router</a></p></div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="Router"><span class="type-signature"></span>new Router<span class="signature">(opts, app)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name">
+                  
+                  <code>opts</code>
+                  
+                  
+                </td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last"><p>Router options.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name">
+                  
+                  <code>app</code>
+                  
+                  
+                </td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Application.html">Application</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last"><p>Application object.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="test_fixtures_doctools_node_modules_egg-core_lib_utils_router.js.html">test/fixtures/doctools/node_modules/egg-core/lib/utils/router.js</a>, <a href="test_fixtures_doctools_node_modules_egg-core_lib_utils_router.js.html#line54">line 54</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="register"><span class="type-signature"></span>register<span class="signature">(path, methods, middlewares, opts)</span><span class="type-signature"> &rarr; {Route}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Create and register a route.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name">
+                  
+                  <code>path</code>
+                  
+                  
+                </td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last"><p>url path</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name">
+                  
+                  <code>methods</code>
+                  
+                  
+                </td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last"><p>Array of HTTP verbs</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name">
+                  
+                  <code>middlewares</code>
+                  
+                  
+                </td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last"><ul>
+<li></li>
+</ul></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name">
+                  
+                  <code>opts</code>
+                  
+                  
+                </td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last"><ul>
+<li></li>
+</ul></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="test_fixtures_doctools_node_modules_egg-core_lib_utils_router.js.html">test/fixtures/doctools/node_modules/egg-core/lib/utils/router.js</a>, <a href="test_fixtures_doctools_node_modules_egg-core_lib_utils_router.js.html#line87">line 87</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="resources"><span class="type-signature"></span>resources<span class="signature">(name, prefix, middleware)</span><span class="type-signature"> &rarr; {<a href="Router.html">Router</a>}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>restful router api</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name">
+                  
+                  <code>name</code>
+                  
+                  
+                </td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last"><p>Router name</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name">
+                  
+                  <code>prefix</code>
+                  
+                  
+                </td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last"><p>url prefix</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name">
+                  
+                  <code>middleware</code>
+                  
+                  
+                </td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last"><p>middleware or controller</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="test_fixtures_doctools_node_modules_egg-core_lib_utils_router.js.html">test/fixtures/doctools/node_modules/egg-core/lib/utils/router.js</a>, <a href="test_fixtures_doctools_node_modules_egg-core_lib_utils_router.js.html#line138">line 138</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>```js
+app.resources('/posts', 'posts')
+app.resources('posts', '/posts', 'posts')
+app.resources('posts', '/posts', app.role.can('user'), app.controller.posts)
+```
+
+Examples:
+
+```js
+app.resources('/posts', 'posts')
+```
+
+yield router mapping
+
+Method | Path            | Route Name     | Controller.Action
+-------|-----------------|----------------|-----------------------------
+GET    | /posts          | posts          | app.controller.posts.index
+GET    | /posts/new      | new_post       | app.controller.posts.new
+GET    | /posts/:id      | post           | app.controller.posts.show
+GET    | /posts/:id/edit | edit_post      | app.controller.posts.edit
+POST   | /posts          | posts          | app.controller.posts.create
+PUT    | /posts/:id      | post           | app.controller.posts.update
+DELETE | /posts/:id      | post           | app.controller.posts.destroy
+
+app.router.url can generate url based on arguments
+```js
+app.router.url('posts')
+=> /posts
+app.router.url('post', { id: 1 })
+=> /posts/1
+app.router.url('new_post')
+=> /posts/new
+app.router.url('edit_post', { id: 1 })
+=> /posts/1/edit
+```</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="url"><span class="type-signature"></span>url<span class="signature">(name, params)</span><span class="type-signature"> &rarr; {String}</span></h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name">
+                  
+                  <code>name</code>
+                  
+                  
+                </td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last"><p>Router name</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name">
+                  
+                  <code>params</code>
+                  
+                  
+                </td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last"><p>more parameters</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="test_fixtures_doctools_node_modules_egg-core_lib_utils_router.js.html">test/fixtures/doctools/node_modules/egg-core/lib/utils/router.js</a>, <a href="test_fixtures_doctools_node_modules_egg-core_lib_utils_router.js.html#line191">line 191</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>```js
+router.url('edit_post', { id: 1, name: 'foo', page: 2 })
+=> /posts/1/edit?name=foo&amp;page=2
+router.url('posts', { name: 'foo&amp;1', page: 2 })
+=> /posts?name=foo%261&amp;page=2
+```</code></pre>
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Wed Feb 09 2022 16:41:55 GMT+0800 (中国标准时间) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
